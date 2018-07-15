@@ -1,0 +1,141 @@
+.the-team-card {
+    margin: 2%;
+    height: 85%;
+}
+.team-bar {
+    color:#313b47; 
+    background:  #d7afaf;
+    width: 99%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+.team-grid-container {
+    width: 100%;
+}
+.card-contact {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+    height: 7%;
+}
+.card-contact button.mat-button:first-child {
+    width: 46.25%;
+    padding: 0;
+    margin-left: 2.5%;
+    height: 90%;
+    background: #c1c4c8;
+    color: #313b47;
+}
+.card-contact button.mat-button:last-child {
+    width: 46.25%;
+    padding: 0;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    height: 90%;
+    background: #c1c4c8;
+    color: #313b47;
+}
+.card-contact button.mat-button:hover {
+    background: #313b47;
+    color: #c1c4c8;
+}
+
+.medium-team, .small-team {
+    display: none;
+}
+mat-card-content {
+    height: 30%;
+    vertical-align: middle;
+}
+@media (max-width: 1000px) {
+    .big-team {
+        display: none;
+    }
+    .medium-team {
+        display: block;
+    }
+}
+@media (max-width: 600px) {
+    .medium-team {
+        display: none;
+    }
+    .team-bar {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .small-team {
+        display: block;
+    }
+    .the-team-card {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .mat-card-image {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+    }
+
+    .mat-card-header {
+        padding: 2%;
+    }
+
+    .mat-expansion-panel {
+        position: reletive;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: none;
+    }
+
+  .mat-expansion-panel-header, .mat-expansion-panel-header-title {
+        color: #c1c4c8;
+        background: #313b47;
+    }
+    .mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-title, .mat-expansion-panel-header.mat-expanded {
+        color: #313b47;
+        background: #c1c4c8;
+    }
+    .mat-expansion-panel.mat-expanded {
+        position: relative;
+        bottom: 0;
+    }
+    .mat-expansion-panel:not([class*=mat-elevation-z]) {
+        box-shadow: unset;
+    }
+
+    .mat-expansion-panel:hover .mat-expansion-panel-header, .mat-expansion-panel:hover .mat-expansion-panel-header-title, .mat-expansion-panel-header-title:hover, .mat-expansion-panel-header.mat-expanded:focus, .mat-expansion-panel-header.mat-expanded:hover {
+        background: #c1c4c8;
+        color: #313b47;
+    }
+    .mat-divider {
+        margin: 5% auto;
+    }
+    p {
+        margin-bottom: 12%;
+    }
+
+    .expansion-buttons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 48px;
+    }
+    .expansion-buttons button {
+        height: 99.5%;
+        width: 49.5%;
+        margin-top: .25%;
+        margin-bottom: .25%;
+        margin-left: .125%;
+    }
+    .expansion-buttons button:last-child {
+        margin-right: .125%;
+    }
+}

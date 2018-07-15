@@ -10,69 +10,10 @@
     display: none;
 }
 
-@media (max-width: 680px) {
-    .medium {
-        display: block;
-    }
-    .big {
-        display: none;
-    }
-}
-
 .slideshow {
     max-width: 100%;
     height: 40vw;
     margin: 2% auto;
-}
-
-span {
-    text-transform: uppercase;
-    display:table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 22px;
-    color: #c1c4c8;
-    background: rgba(0,0,0,.6);
-    width: 100%;
-    padding: 50% 0;
-}
-.reliability:hover span {
-    display: none;
-}
-
-.reliability {
-    background-image: url('../../assets/ValueButtons/reliablility.jpeg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-
-.workmanship:hover span {
-    display:none;
-}
-
-.workmanship {
-    background-image: url('../../assets/ValueButtons/workmanship.jpeg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-
-.experience:hover span {
-    display:none;
-}
-
-.experience {
-    background-image: url('../../assets/ValueButtons/experience.jpeg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-}
-.mat-divider {
-    margin: 3% auto;
 }
 
 mat-expansion-panel {
@@ -85,4 +26,18 @@ background: #d7afaf;
 
 mat-panel-title {
     color: #313b47;
+}
+
+.mat-accordion>.mat-expansion-panel-spacing:last-child {
+    margin-bottom: 2%;
+}
+
+@media (max-width: 680px) {
+    .medium {
+        display: block;
+    }
+    .big {
+        display: none;
+    }
+
 }

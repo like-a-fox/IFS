@@ -16,6 +16,7 @@ import { ContactComponent} from './contact/contact.component';
 import { GalleryComponent} from './gallery/gallery.component';
 import { IfsServicesComponent } from './ifs-services/ifs-services.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
     ContactComponent,
     GalleryComponent,
     IfsServicesComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     MatExpansionModule,

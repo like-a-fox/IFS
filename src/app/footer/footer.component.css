@@ -1,0 +1,72 @@
+span {
+    text-transform: uppercase;
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 22px;
+    color: #c1c4c8;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+    padding: 50% 0;
+}
+.reliability:hover span {
+    display: none;
+}
+
+.reliability {
+    background-image: url('../../assets/ValueButtons/reliablility.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.workmanship:hover span {
+    display:none;
+}
+
+.workmanship {
+    background-image: url('../../assets/ValueButtons/workmanship.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.experience:hover span {
+    display:none;
+}
+
+.experience {
+    background-image: url('../../assets/ValueButtons/experience.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.mat-divider {
+    margin: 3% auto;
+}
+
+footer {
+    position: relative;
+    bottom: 25px;
+    text-transform: capitalize;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.small-images {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .small-images {
+        display: block;
+    }
+    .big-images {
+        display:none;
+    }
+}
