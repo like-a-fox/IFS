@@ -1,0 +1,118 @@
+<mat-grid-list class="big" cols="4" rowHeight="80px" gutterSize="10">
+  <mat-grid-tile colspan="2">
+      <mat-card class="main-card">
+          <mat-card-header>
+            <mat-card-title>
+            IFS FLOORING LLC
+            </mat-card-title>
+            <mat-card-subtitle>
+            The Arizona Commercial Flooring Dealer
+            </mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+      <mat-card class="main-card">
+          <mat-card-header>
+            <mat-card-title>
+            Phoenix Office
+            </mat-card-title>
+            <mat-card-subtitle>
+                (623) 434-9025
+            </mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+      <mat-card class="main-card">
+          <mat-card-header>
+            <mat-card-title>
+            Tucson Office
+            </mat-card-title>
+            <mat-card-subtitle>
+            (520) 888-2211
+            </mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list class="medium" cols="2" rowHeight="80px" gutterSize="10">
+    <mat-grid-tile colspan="2">
+        <mat-card class="main-card">
+            <mat-card-header>
+              <mat-card-title>
+              IFS FLOORING LLC
+              </mat-card-title>
+              <mat-card-subtitle>
+              The Arizona Commercial Flooring Dealer
+              </mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="main-card">
+            <mat-card-header>
+              <mat-card-title>
+              Phoenix Office
+              </mat-card-title>
+              <mat-card-subtitle>
+                  (623) 434-9025
+              </mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="main-card">
+            <mat-card-header>
+              <mat-card-title>
+              Tucson Office
+              </mat-card-title>
+              <mat-card-subtitle>
+              (520) 888-2211
+              </mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+<div class="slideshow">
+    <slideshow 
+    [imageUrls]="imageUrls"
+    [autoPlay]="autoPlay"
+    [autoPlayInterval]="autoPlayInterval"
+    [showArrows]="showArrows"></slideshow>
+</div>
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      More About The Company
+    </mat-panel-title>
+    
+  </mat-expansion-panel-header>
+  <p>IFS Flooring LLC serves our customers and employees with leadership, pride, and innovations.</p>
+  <p>Under its current ownership, IFS Flooring was established in 2008. </p>
+  <p>We are a full-service commercial flooring contractor dedicated to providing superior customer service in the Arizona marketplace!</p>
+   
+  
+  
+</mat-expansion-panel>
+<mat-grid-list cols="3" rowHeight="5:3" class="big-images" gutterSize="10">
+  <mat-grid-tile routerLink="/the-team" class="reliability">
+    <span >
+      reliability
+    </span>
+  </mat-grid-tile>
+  <mat-grid-tile routerLink="/ifs-services" class="workmanship">
+    <span>
+      workmanship
+    </span>
+  </mat-grid-tile>
+  <mat-grid-tile routerLink="/gallery" class="experience">
+    <span>
+      experience
+    </span>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-divider></mat-divider>
