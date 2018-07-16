@@ -1,3 +1,7 @@
+.footer-images {
+    display: none;
+}
+
 span {
     text-transform: uppercase;
     display:table-cell;
@@ -8,41 +12,60 @@ span {
     background: rgba(0,0,0,.6);
     width: 100%;
     padding: 50% 0;
+
 }
 .reliability:hover span {
     display: none;
 }
 
-.reliability {
+.reliability span {
     background-image: url('../../assets/ValueButtons/reliablility.jpeg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 4%;
+}
+
+.reliability {
+
     cursor: pointer;
+    margin-right: 4%;
 }
 
 .workmanship:hover span {
     display:none;
 }
 
-.workmanship {
+.workmanship span {
     background-image: url('../../assets/ValueButtons/workmanship.jpeg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 4%;
+}
+
+.workmanship {
+
     cursor: pointer;
+    margin-right: 4%;
 }
 
 .experience:hover span {
     display:none;
 }
 
-.experience {
+.experience span {
     background-image: url('../../assets/ValueButtons/experience.jpeg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 0;
+}
+
+.experience {
+
     cursor: pointer;
+    margin-right: 4%;
 }
 .mat-divider {
     margin: 3% auto;
@@ -58,15 +81,16 @@ footer {
     text-align: center;
 }
 
-.small-images {
-    display: none;
-}
+
 
 @media (max-width: 600px) {
     .small-images {
-        display: block;
+        display: none;
     }
     .big-images {
         display:none;
+    }
+    .mat-grid-tile span {
+        margin: 2%;
     }
 }

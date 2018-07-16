@@ -4,7 +4,7 @@
     type="button"
     aria-label="Toggle sidenav"
     (click)="drawer.toggle()"
-    *ngIf="isHandset$ | async">
+    *ngIf="isHandset$ || isTablet$ | async">
     <span></span>
     <span></span>
     <span></span>
@@ -22,8 +22,8 @@
     #drawer
     class="sidenav"
     fixedInViewport="false"
-    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [attr.role]="(isHandset$ || isTablet$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ || isTablet$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
     <mat-nav-list>
       <a mat-list-item routerLink="/home" routerLinkActive="active-link">Home</a>

@@ -83,7 +83,7 @@
     [autoPlayInterval]="autoPlayInterval"
     [showArrows]="showArrows"></slideshow>
 </div>
-<mat-accordion>
+
     <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
@@ -94,7 +94,58 @@
         <p>Under its current ownership, IFS Flooring was established in 2008. </p>
         <p>We are a full-service commercial flooring contractor dedicated to providing superior customer service in the Arizona marketplace!</p>
       </mat-expansion-panel>
-      <mat-expansion-panel>
+      <mat-grid-list cols="3" rowHeight="2:1" class="big-images">
+          <mat-grid-tile routerLink="/the-team" class="reliability value-cards">
+            <mat-card class="value-card-sections">
+              
+              <mat-card-content>
+                      reliability
+              </mat-card-content>
+            </mat-card>
+
+          </mat-grid-tile>
+          <mat-grid-tile routerLink="/ifs-services" class="workmanship value-cards">
+            <mat-card class="value-card-sections">
+                                <mat-card-content>
+                        workmanship
+                </mat-card-content>
+              </mat-card>
+          </mat-grid-tile>
+          <mat-grid-tile routerLink="/gallery" class="experience value-cards">
+            <mat-card class="value-card-sections">
+                               <mat-card-content>
+                        experience
+                </mat-card-content>
+              </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+        
+        <mat-grid-list cols="1" rowHeight="100vh" class="small-images">
+            <mat-grid-tile routerLink="/the-team" class="reliability value-cards">
+              <mat-card class="value-card-sections">
+                
+                <mat-card-content>
+                        reliability
+                </mat-card-content>
+              </mat-card>
+  
+            </mat-grid-tile>
+            <mat-grid-tile routerLink="/ifs-services" class="workmanship value-cards">
+              <mat-card class="value-card-sections">
+                                  <mat-card-content>
+                          workmanship
+                  </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile routerLink="/gallery" class="experience value-cards">
+              <mat-card class="value-card-sections">
+                                 <mat-card-content>
+                          experience
+                  </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+      <mat-expansion-panel class="finish-options">
           <mat-expansion-panel-header>
             <mat-panel-title>
               Offered Flooring Finishes
@@ -104,7 +155,7 @@
           <p>resilient surfaces, such as vinyl, rubber, luxury vinyl tile and cork;</p>
           <p>and concrete coatings such as stain, seal, and epoxy.</p>
         </mat-expansion-panel>
-</mat-accordion>
+
 
 
 

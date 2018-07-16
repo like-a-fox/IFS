@@ -11,8 +11,12 @@ import { map } from 'rxjs/operators';
 
 export class IFSNavComponent {
   
-
+  
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
+    .pipe(
+      map(result => result.matches)
+    );
+    isTablet$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Tablet)
     .pipe(
       map(result => result.matches)
     );

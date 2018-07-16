@@ -1,11 +1,20 @@
+
+.big-team {
+    height: 90vh;
+}
+.the-team-tile {
+    height: 90vh;
+}
 .the-team-card {
-    margin: 2%;
-    height: 85%;
+    height: 80vh;
+    margin: 2% 4% 2% 0;
+}
+.the-team-tile:last-child .the-team-card {
+    margin-right: 0;
 }
 .team-bar {
     color:#313b47; 
     background:  #d7afaf;
-    width: 99%;
     margin: 0 auto;
     font-size: 18px;
 }
@@ -44,22 +53,18 @@
     color: #c1c4c8;
 }
 
-.medium-team, .small-team {
+.medium-team, .small-team, .medium-large-team {
     display: none;
 }
 mat-card-content {
     height: 30%;
     vertical-align: middle;
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 805px) {
     .big-team {
         display: none;
     }
-    .medium-team {
-        display: block;
-    }
-}
-@media (max-width: 600px) {
     .medium-team {
         display: none;
     }

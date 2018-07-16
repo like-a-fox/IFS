@@ -104,3 +104,11 @@ button.navbar-toggler {
 mat-sidenav-content {
   padding: 2%;
 }
+@media (max-width:450px) {
+  .sidenav {
+    width: 100%;
+  }
+  .mat-nav-list .mat-list-item {
+    width : 100%;
+  }
+}

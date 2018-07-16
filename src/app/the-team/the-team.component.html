@@ -1,7 +1,7 @@
 <div class="team-grid-container">
   <mat-toolbar class="team-bar">The Team</mat-toolbar>
-    <mat-grid-list class="big-team" cols="3" rowHeight="5:14" gutterSize="0">
-        <mat-grid-tile>
+    <mat-grid-list class="big-team" cols="3" rowHeight="80vw" gutterSize="0">
+        <mat-grid-tile class="the-team-tile">
             <mat-card class="the-team-card">
                 <mat-card-header>
                     <mat-card-title>
@@ -22,7 +22,7 @@
               </mat-card>
         </mat-grid-tile>
       
-        <mat-grid-tile>
+        <mat-grid-tile class="the-team-tile">
             <mat-card class="the-team-card">
                 <mat-card-header>
                     <mat-card-title>
@@ -43,8 +43,8 @@
               </mat-card>
           </mat-grid-tile>
       
-          <mat-grid-tile>
-              <mat-card class="the-team-card">
+          <mat-grid-tile class="the-team-tile">
+              <mat-card class="the-team-card" :end>
                   <mat-card-header>
                       <mat-card-title>
                           Wanda Houle
@@ -66,8 +66,8 @@
             </mat-grid-tile>
       </mat-grid-list>
 
-      <mat-grid-list class="medium-team" cols="2" rowHeight="5:12" gutterSize="0">
-          <mat-grid-tile>
+      <mat-grid-list class="medium-team" cols="2" rowHeight="1:2" gutterSize="0">
+          <mat-grid-tile class="the-team-tile">
               <mat-card class="the-team-card">
                   <mat-card-header>
                       <mat-card-title>
@@ -88,7 +88,7 @@
                 </mat-card>
           </mat-grid-tile>
         
-          <mat-grid-tile>
+          <mat-grid-tile class="the-team-tile">
               <mat-card class="the-team-card">
                   <mat-card-header>
                       <mat-card-title>
@@ -109,7 +109,7 @@
                 </mat-card>
             </mat-grid-tile>
         
-            <mat-grid-tile>
+            <mat-grid-tile class="the-team-tile">
                 <mat-card class="the-team-card">
                     <mat-card-header>
                         <mat-card-title>
@@ -132,6 +132,7 @@
               </mat-grid-tile>
         </mat-grid-list>
 
+        
         <div class="small-team">
             <mat-card class="the-team-card">
                 <mat-card-header>

@@ -27,9 +27,8 @@ background: #d7afaf;
 mat-panel-title {
     color: #313b47;
 }
-
-.mat-accordion>.mat-expansion-panel-spacing:last-child {
-    margin-bottom: 2%;
+.finish-options {
+    margin-top: 2%;
 }
 
 @media (max-width: 680px) {
@@ -40,4 +39,148 @@ mat-panel-title {
         display: none;
     }
 
+}
+
+.big-images {
+    height: 10vw;
+}
+
+.mat-card-content {
+    letter-spacing: .1em;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 30;
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding-top: 50%;
+    color: #fff;
+
+}
+
+.value-cards {
+    height: 10vw;
+
+
+}
+
+.value-card-sections {
+    height: 100%;
+    width: 100%;
+    margin-right: 4%;
+
+}
+.value-cards:last-child .value-card-sections {
+    margin-right: 0;
+}
+.value-card-sections:focus {
+    outline: none;
+}
+
+
+
+.reliability:hover .mat-card-content{
+    display: none;
+}
+
+.reliability .value-card-sections {
+    background-image: url('../../assets/ValueButtons/reliablility.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 4%;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.reliability:hover .value-card-sections {
+    filter:grayscale(0%);
+
+}
+
+.workmanship:hover .mat-card-content {
+    display:none;
+}
+
+.workmanship .value-card-sections {
+    background-image: url('../../assets/ValueButtons/workmanship.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 4%;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.workmanship:hover .value-card-sections {
+    filter:grayscale(0%);
+}
+
+.experience:hover .mat-card-content{
+    display:none;
+}
+
+.experience .value-card-sections {
+    background-image: url('../../assets/ValueButtons/experience.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.experience:hover .value-card-sections {
+    filter:grayscale(0%);
+}
+
+
+
+.small-images {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .small-images {
+        display: block;
+        height: 120vh;
+    }
+    .big-images {
+        display:none;
+    }
+    .value-cards {
+        height: 32.5%;
+    }
+    .reliability {
+        top: 0;
+    }
+    .workmanship {
+        top: 33%;
+        margin-top: 1%;
+    }
+    .experience {
+        top: 66%;
+        margin-top: 2%;
+    }
+    .value-card-sections {
+        margin-right: 0;
+        height: 100%;
+        width: 100%;
+        vertical-align: middle;
+    }
+    .workmanship .value-card-sections, .reliability .value-card-sections {
+        margin-right: 0;
+    }
+    .mat-card-content {
+        padding-top: 0;
+        vertical-align: middle;
+        display: table-cell;
+        height: 313px;
+        width:384px;
+    }
+    .finish-options {
+        margin-top: 1%;
+    }
 }
