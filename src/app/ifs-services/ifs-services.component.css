@@ -1,0 +1,129 @@
+.services-container {
+    width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 93vh;
+}
+
+.services-card {
+    width: 60vh;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.services-card .mat-card-title {
+    height: 50px;
+    line-height: 50px;
+    width: 95%;
+    padding-left: 5%;
+    background: #d7afaf;
+    color: #313b47;
+    letter-spacing: .1em;
+    font-size: 18px;
+    display: block;
+}
+
+.services-card .mat-card-subtitle {
+    padding: 0 5%;
+}
+
+.services-card .mat-card-content {
+    padding-left: 5%;
+    height: 100px;
+}
+
+.supplier-card {
+    width: 60vh;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 67%;
+}
+
+
+.supplier-title {
+    font-size: 18px;
+    letter-spacing: .1em;
+    display: block;
+    width: 95%;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+    padding-left: 5%;
+    background: #d7afaf;
+    color: #313b47;
+}
+.supplier-card .mat-card-content {
+    padding: 2% 5%;
+    height: 260px
+}
+.mat-card-content span {
+    width: 100%;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+.center-span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.left-card-list {
+    float: left;
+    width: 49%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.right-card-list {
+    float: right;
+    width: 49%;
+    position: relative;
+    right: 0;
+    top: 0;
+
+}
+
+.contact-us-card button {
+    position: absolute;
+    bottom: 3.5%;
+    left: 3.5%;
+    right: 3.5%;
+    width: 93%;
+    background: #c1c4c8;
+    font-size: 15px;
+    letter-spacing: .1em;
+    color: #313b47;
+}
+
+.contact-us-card button:hover {
+    background: #313b47;
+    color: #d7afaf;
+}
+
+.gallery-container {
+    position: absolute;
+    bottom: 0;
+    top:0;
+    right: 0;
+    width: 80vh;
+}
+
+.gallery-counter {
+    display: none;
+}
+
+
+
+
+
+

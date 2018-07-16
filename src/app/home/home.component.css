@@ -6,6 +6,15 @@
     padding-top: 16px;
     background: #d7afaf;
 }
+.main-card .mat-card-title {
+    font-size: 16px;
+    text-transform: capitalize;
+
+}
+.main-card .mat-card-subtitle {
+    font-size: 14px;
+    font-style: italic;
+}
 .medium {
     display: none;
 }

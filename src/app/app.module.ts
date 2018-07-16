@@ -13,10 +13,11 @@ import { IFSTableComponent } from './ifstable/ifstable.component';
 import { TheTeamComponent } from './the-team/the-team.component';
 import { ConcreteSurfacingComponent } from './concrete-surfacing/concrete-surfacing.component';
 import { ContactComponent} from './contact/contact.component';
-import { GalleryComponent} from './gallery/gallery.component';
 import { IfsServicesComponent } from './ifs-services/ifs-services.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+
+
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -24,8 +25,7 @@ const appRoutes: Routes = [
   { path: 'the-team', component: TheTeamComponent },
   { path: 'ifs-services', component: IfsServicesComponent },
   { path: 'concrete-surfacing', component: ConcreteSurfacingComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'gallery', component: GalleryComponent }
+  { path: 'contact', component: ContactComponent }
 ];
 @NgModule({
   declarations: [
@@ -36,7 +36,6 @@ const appRoutes: Routes = [
     TheTeamComponent,
     ConcreteSurfacingComponent,
     ContactComponent,
-    GalleryComponent,
     IfsServicesComponent,
     HomeComponent,
     FooterComponent
