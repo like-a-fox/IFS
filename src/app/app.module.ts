@@ -1,27 +1,43 @@
+//core
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { SlideshowModule } from 'ng-simple-slideshow';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { IFSNavComponent } from './ifsnav/ifsnav.component';
+
+//Design Modules
+import { 
+  MatExpansionModule,
+   MatToolbarModule, 
+   MatButtonModule, 
+   MatSidenavModule, 
+   MatIconModule, 
+   MatListModule, 
+   MatGridListModule, 
+   MatCardModule, 
+   MatMenuModule, 
+   MatTableModule, 
+   MatPaginatorModule, 
+   MatSortModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatExpansionModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
-import { IFSDashboardComponent } from './ifsdashboard/ifsdashboard.component';
-import { IFSTableComponent } from './ifstable/ifstable.component';
-import { TheTeamComponent } from './the-team/the-team.component';
-import { ConcreteSurfacingComponent } from './concrete-surfacing/concrete-surfacing.component';
-import { ContactComponent} from './contact/contact.component';
-import { IfsServicesComponent } from './ifs-services/ifs-services.component';
-import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
-import 'hammerjs';
-import 'mousetrap';
-import { NgxMasonryModule } from 'ngx-masonry';
 import { GalleryModule } from  '@ngx-gallery/core';
 import { LightboxModule } from  '@ngx-gallery/lightbox';
 import { GallerizeModule } from  '@ngx-gallery/gallerize';
+import { NgxMasonryModule } from 'ngx-masonry';
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import 'hammerjs';
+import 'mousetrap';
+
+//Components
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { IFSNavComponent } from './ifsnav/ifsnav.component';
+import { TheTeamComponent } from './the-team/the-team.component';
+import { IfsServicesComponent } from './ifs-services/ifs-services.component';
+import { ContactComponent} from './contact/contact.component';
+import { IfsGalleryComponent } from './ifs-gallery/ifs-gallery.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 
 
@@ -30,21 +46,19 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'the-team', component: TheTeamComponent },
   { path: 'ifs-services', component: IfsServicesComponent },
-  { path: 'concrete-surfacing', component: ConcreteSurfacingComponent },
+  { path: 'ifs-gallery', component: IfsGalleryComponent },
   { path: 'contact', component: ContactComponent }
 ];
 @NgModule({
   declarations: [
     AppComponent,
     IFSNavComponent,
-    IFSDashboardComponent,
-    IFSTableComponent,
     TheTeamComponent,
-    ConcreteSurfacingComponent,
     ContactComponent,
     IfsServicesComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    IfsGalleryComponent
   ],
   imports: [
     NgxMasonryModule,

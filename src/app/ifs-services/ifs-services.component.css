@@ -1,11 +1,13 @@
-
+.single-column {
+    display: none;
+}
 
 .services-card {
-    width: 40%;
+    width: 48%;
     padding: 0;
     position: relative;
     display: block;
-    height: 30vh;
+    min-height: 30vh;
     margin-bottom: 2%;
 }
 
@@ -31,12 +33,12 @@
 }
 
 .supplier-card {
-    width: 40%;
+    width: 48%;
     padding: 0;
     position: relative;
     display:block;
     float: left;
-    height: 52vh;
+    min-height: 52vh;
     margin-bottom: 2%;
 }
 
@@ -58,7 +60,6 @@
     height: 260px
 }
 .mat-card-content span {
-    width: 100%;
     display: block;
     height: 25px;
     line-height: 25px;
@@ -68,7 +69,6 @@
     height: 30px;
     line-height: 30px;
     margin: 0 auto;
-    width: 90%;
 }
 
 .left-card-list {
@@ -104,53 +104,12 @@
     border: 2px solid #313b47;
 }
 
-.gallery-card {
-    position: relative;
-    float: right;
-    display: block;
-    width: 57%;
-    margin: 0 auto;
-    padding: 0 0 2% 0;
-
-
-}
-
-.gallery-card .mat-card-title {
-    font-size: 18px;
-    position: relative;
-    display: block;
-    letter-spacing: .1em;
-    width: 95%;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 auto 2% auto;
-    padding-left: 5%;
-    background: #d7afaf;
-    color: #313b47;
-}
-
-.gallery-card .mat-card-content {
-    max-height: 74vh;
-    overflow: scroll;
-}
-
-ngx-masonry {
-    margin: 0 auto;
-}
-
-.masonry-item {
-    margin-bottom: 20px;
-    background-color: #313b47;
-    background-size: cover;
-    width:24vh;
-    
-}
-
-.masonry-item img {
-    width:100%;
-    height: 100%;
-    display:block;
-    cursor: pointer;
+@media (max-width: 680px) {
+    .services-card, .supplier-card {
+        width: 90%;
+        float: none;
+        margin: 3% auto;
+    }
 }
 
 

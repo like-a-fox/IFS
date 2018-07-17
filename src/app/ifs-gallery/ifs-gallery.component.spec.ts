@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConcreteSurfacingComponent } from './concrete-surfacing.component';
+import { IfsGalleryComponent } from './ifs-gallery.component';
 
-describe('ConcreteSurfacingComponent', () => {
-  let component: ConcreteSurfacingComponent;
-  let fixture: ComponentFixture<ConcreteSurfacingComponent>;
+describe('IfsGalleryComponent', () => {
+  let component: IfsGalleryComponent;
+  let fixture: ComponentFixture<IfsGalleryComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ConcreteSurfacingComponent ]
+      declarations: [ IfsGalleryComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ConcreteSurfacingComponent);
+    fixture = TestBed.createComponent(IfsGalleryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

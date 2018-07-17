@@ -3,7 +3,8 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 280px;
+  top: 64px;
 }
 
 mat-nav-list {
@@ -11,8 +12,9 @@ mat-nav-list {
 }
 
 .mat-toolbar.mat-primary {
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 999;
 }
 mat-toolbar.header {
   padding-left: 0;
@@ -90,6 +92,22 @@ button.navbar-toggler {
   color: #313b47;
 }
 
+.smaller-nav {
+  display:none;
+}
+
+.mat-sidenav-content {
+  margin-top: 64px;
+}
+@media (max-height:950px) {
+  .bigger-nav {
+    display: none;
+  }
+  .smaller-nav {
+    display: initial;
+  }
+}
+
 @media (max-width:600px) {
   .navbar-toggler span:nth-child(1) {
     top: 21px;
@@ -100,11 +118,14 @@ button.navbar-toggler {
   .navbar-toggler span:nth-child(3) {
     top: 36px;
   }
+  .sidenav {
+    top: 56px;
+  }
 }
 mat-sidenav-content {
   padding: 2%;
 }
-@media (max-width:450px) {
+@media (max-width:550px) {
   .sidenav {
     width: 100%;
   }

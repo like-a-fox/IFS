@@ -1,18 +1,3 @@
-<mat-card class="gallery-card">
-    <mat-card-title class="mat-elevation-z2">
-      Recently Completed Work
-    </mat-card-title>
-    <mat-card-content>
-
-          <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true" >
-              <ngxMasonryItem *ngFor="let img of imageData; let i = index" (click)="lightbox.open(0, 'lightbox')" class="masonry-item">
-                <img [src]="img.srcUrl">
-              </ngxMasonryItem>
-            </ngx-masonry> 
-
-        
-    </mat-card-content>
-  </mat-card>
 
 <mat-card class="services-card mat-elevation-z2">
     <mat-card-title class="mat-elevation-z2">
@@ -41,6 +26,7 @@
         <span> <p class="center-span">- Interface Carpet</p></span>
         <span> <p class="center-span">- Shaw Commercial</p></span>
         <span> <p class="center-span">- Karndean</p></span>
+        
       </div>
       <div class="right-card-list">
         <span> <p class="center-span">- Mohawk</p></span>

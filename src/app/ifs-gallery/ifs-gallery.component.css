@@ -1,0 +1,56 @@
+.gallery-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 2% 0;
+
+
+}
+
+.gallery-card .mat-card-title {
+    font-size: 18px;
+    position: relative;
+    display: block;
+    letter-spacing: .1em;
+    width: 95%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto 2% auto;
+    padding-left: 5%;
+    background: #d7afaf;
+    color: #313b47;
+}
+
+.gallery-card .mat-card-content {
+    height: 100%;
+    overflow: scroll;
+}
+
+ngx-masonry {
+    margin: 0 auto;
+}
+
+.masonry-item {
+    margin-bottom: 20px;
+    background-color: #313b47;
+    background-size: cover;
+    max-width:350px;
+    
+}
+
+.masonry-item img {
+    width:100%;
+    display:block;
+    cursor: pointer;
+}
+@media (max-width: 750px) {
+    .masonry-item {
+        max-width: 250px;
+    }
+}
+@media (max-width: 550px) {
+    .masonry-item {
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,15 @@
+<mat-card class="gallery-card">
+  <mat-card-title class="mat-elevation-z2">
+    Recently Completed Work
+  </mat-card-title>
+  <mat-card-content>
+
+        <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true" >
+            <ngxMasonryItem *ngFor="let img of imageData; let i = index" (click)="lightbox.open(0, 'lightbox')" class="masonry-item">
+              <img [src]="img.srcUrl">
+            </ngxMasonryItem>
+          </ngx-masonry> 
+
+      
+  </mat-card-content>
+</mat-card>
