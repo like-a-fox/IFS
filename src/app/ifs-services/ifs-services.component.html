@@ -1,4 +1,30 @@
-<div class="services-container">
+<mat-card class="gallery-card">
+    <mat-card-title class="mat-elevation-z2">
+      Recently Completed Work
+    </mat-card-title>
+    <mat-card-content>
+
+          <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true" >
+              <ngxMasonryItem *ngFor="let img of imageData; let i = index" (click)="lightbox.open(0, 'lightbox')" class="masonry-item">
+                <img [src]="img.srcUrl">
+              </ngxMasonryItem>
+            </ngx-masonry> 
+
+        
+    </mat-card-content>
+  </mat-card>
+
+<mat-card class="services-card mat-elevation-z2">
+    <mat-card-title class="mat-elevation-z2">
+      Division 9 Services
+    </mat-card-title>
+    <mat-card-subtitle>
+      IFS Flooring LLC is a commercial flooring contractor specializing in all aspects of floor covering
+    </mat-card-subtitle>
+  <mat-card-content>
+    Ceramic and porcelain tile, modular and broadloom carpet, rubber flooring, luxury vinyl tile and plank, sheet vinyl, linoleum, VCT, gym floors, epoxy coatings, and stained and sealed concrete surfaces.
+  </mat-card-content>
+</mat-card>
 
   <mat-card class="supplier-card mat-elevation-z2">
       <mat-card-title class="supplier-title mat-elevation-z2">
@@ -31,21 +57,11 @@
       </mat-card-actions>
     </mat-card-content>
   </mat-card>
-  <mat-card class="services-card mat-elevation-z2">
-      <mat-card-title class="mat-elevation-z2">
-        Division 9 Services
-      </mat-card-title>
-      <mat-card-subtitle>
-        IFS Flooring LLC is a commercial flooring contractor specializing in all aspects of floor covering
-      </mat-card-subtitle>
-    <mat-card-content>
-      Ceramic and porcelain tile, modular and broadloom carpet, rubber flooring, luxury vinyl tile and plank, sheet vinyl, linoleum, VCT, gym floors, epoxy coatings, and stained and sealed concrete surfaces.
-    </mat-card-content>
-  </mat-card>
-  </div>
+  
 
 
-    
+
+  
 
 
 

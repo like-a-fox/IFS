@@ -1,18 +1,12 @@
-.services-container {
-    width: 100%;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    height: 93vh;
-}
+
 
 .services-card {
-    width: 60vh;
+    width: 40%;
     padding: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
+    display: block;
+    height: 30vh;
+    margin-bottom: 2%;
 }
 
 .services-card .mat-card-title {
@@ -37,12 +31,13 @@
 }
 
 .supplier-card {
-    width: 60vh;
+    width: 40%;
     padding: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 67%;
+    position: relative;
+    display:block;
+    float: left;
+    height: 52vh;
+    margin-bottom: 2%;
 }
 
 
@@ -65,15 +60,15 @@
 .mat-card-content span {
     width: 100%;
     display: block;
-    height: 30px;
-    line-height: 30px;
+    height: 25px;
+    line-height: 25px;
 }
 .center-span {
     display: block;
     height: 30px;
     line-height: 30px;
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
 }
 
 .left-card-list {
@@ -99,28 +94,67 @@
     left: 3.5%;
     right: 3.5%;
     width: 93%;
-    background: #c1c4c8;
+    background: #d2c0c0;
     font-size: 15px;
     letter-spacing: .1em;
     color: #313b47;
 }
 
 .contact-us-card button:hover {
-    background: #313b47;
-    color: #d7afaf;
+    border: 2px solid #313b47;
 }
 
-.gallery-container {
-    position: absolute;
-    bottom: 0;
-    top:0;
-    right: 0;
-    width: 80vh;
+.gallery-card {
+    position: relative;
+    float: right;
+    display: block;
+    width: 57%;
+    margin: 0 auto;
+    padding: 0 0 2% 0;
+
+
 }
 
-.gallery-counter {
-    display: none;
+.gallery-card .mat-card-title {
+    font-size: 18px;
+    position: relative;
+    display: block;
+    letter-spacing: .1em;
+    width: 95%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto 2% auto;
+    padding-left: 5%;
+    background: #d7afaf;
+    color: #313b47;
 }
+
+.gallery-card .mat-card-content {
+    max-height: 74vh;
+    overflow: scroll;
+}
+
+ngx-masonry {
+    margin: 0 auto;
+}
+
+.masonry-item {
+    margin-bottom: 20px;
+    background-color: #313b47;
+    background-size: cover;
+    width:24vh;
+    
+}
+
+.masonry-item img {
+    width:100%;
+    height: 100%;
+    display:block;
+    cursor: pointer;
+}
+
+
+
 
 
 

@@ -16,6 +16,12 @@ import { ContactComponent} from './contact/contact.component';
 import { IfsServicesComponent } from './ifs-services/ifs-services.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import 'hammerjs';
+import 'mousetrap';
+import { NgxMasonryModule } from 'ngx-masonry';
+import { GalleryModule } from  '@ngx-gallery/core';
+import { LightboxModule } from  '@ngx-gallery/lightbox';
+import { GallerizeModule } from  '@ngx-gallery/gallerize';
 
 
 
@@ -41,6 +47,7 @@ const appRoutes: Routes = [
     FooterComponent
   ],
   imports: [
+    NgxMasonryModule,
     MatExpansionModule,
     SlideshowModule,
     BrowserModule,
@@ -57,6 +64,9 @@ const appRoutes: Routes = [
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    GalleryModule.forRoot(),
+    LightboxModule.forRoot(),
+    GallerizeModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
