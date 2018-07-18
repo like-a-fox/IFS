@@ -1,9 +1,20 @@
+.mat-sidenav-content {
+  padding: 2%;
+  margin-top: 64px;
+  height: 100vh;
+  overflow: scroll;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 .sidenav-container {
   min-height: 100%;
 }
 
 .sidenav {
+  position: fixed;
   width: 280px;
+  left:0;
   top: 64px;
   bottom: 0;
 }
@@ -97,9 +108,6 @@ button.navbar-toggler {
   display:none;
 }
 
-.mat-sidenav-content {
-  margin-top: 64px;
-}
 @media (max-width:950px) {
   .bigger-nav {
     display: none;
@@ -122,9 +130,6 @@ button.navbar-toggler {
   .sidenav {
     top: 56px;
   }
-}
-mat-sidenav-content {
-  padding: 2%;
 }
 @media (max-width:550px) {
   .sidenav {

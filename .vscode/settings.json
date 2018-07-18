@@ -1,3 +1,7 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "workbench.editor.openSideBySideDirection": "down",
+    "explorer.openEditors.visible": 4,
+    "typescript.referencesCodeLens.enabled": true,
+    "editor.wordWrap": "wordWrapColumn"
 }

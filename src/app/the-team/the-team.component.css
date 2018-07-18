@@ -1,146 +1,115 @@
 
-.big-team {
-    height: 90vh;
-}
-.the-team-tile {
-    height: 90vh;
-}
-.the-team-card {
-    height: 80vh;
-    margin: 2% 4% 2% 0;
-}
-.the-team-tile:last-child .the-team-card {
-    margin-right: 0;
-}
 .team-bar {
     color:#313b47; 
     background:  #d7afaf;
     margin: 0 auto;
+    width: 98%;
     font-size: 18px;
 }
-.team-grid-container {
+.container {
+    position: relative;
+    display: block;
+
+}
+.mat-grid-list {
+    position: absolute;
+    top: 2vh;
+    width: 100%;
+    overflow: visible;
+    margin-bottom: 17vh;
+    
+}
+.mat-grid-tile {
+    min-height: 70vh;
+    padding: 0;
+    margin-bottom: 5%;
+    overflow: visible;
+}
+.mat-grid-tile:last-child {
+    margin-top: 4%;
+}
+.mat-card {
+    height: 100%;
+    width: 100%;
+    margin: 3%;
+    padding: 0;
+}
+.mat-card-header {
+    margin: 0 4%;
+    padding: 0;
+    height: 10%;
     width: 100%;
 }
-.card-contact {
+
+.mat-card-title {
+    padding: 6% 0;
+    margin: 0;
+}
+.mat-card-subtitle {
+    padding:0;
+    margin: 0;
+}
+.mat-card-image {
+    height: 45%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.mat-card-content {
+    height: 25%;
+    margin: 6%;
+}
+.mat-card-actions {
+    position: absolute;
+    bottom: 0;
+    height: 9%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
+}
+.mat-card>.mat-card-actions:last-child {
+    margin-bottom: 0!important;
+}
+.mat-card-actions a {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    color: #313b47;
+    text-transform: capitalize;
+    display: inline-flex;
+    flex-direction: column;
+    width: 40%;
     position: absolute;
-    bottom: 3%;
-    left: 0;
-    right: 0;
-    height: 7%;
+    bottom: 15px;
+    background: #d7afaf;
 }
-.card-contact button.mat-button:first-child {
-    width: 46.25%;
-    padding: 0;
-    margin-left: 2.5%;
-    height: 90%;
-    background: #c1c4c8;
-    color: #313b47;
+.mat-card-actions a:last-child {
+    right: 7.5%;
 }
-.card-contact button.mat-button:last-child {
-    width: 46.25%;
-    padding: 0;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
-    height: 90%;
-    background: #c1c4c8;
-    color: #313b47;
+.mat-card-actions a:first-child {
+    left: 7.5%;
 }
-.card-contact button.mat-button:hover {
-    background: #313b47;
-    color: #c1c4c8;
+.mat-card-actions a:hover {
+    border: 2px solid #313b47;
 }
-
-.medium-team, .small-team, .medium-large-team {
-    display: none;
+@media (min-width:1200px) {
+    .mat-grid-tile:last-child {
+        margin-top: 0;
+    }
 }
-mat-card-content {
-    height: 30%;
-    vertical-align: middle;
-}
-
-@media (max-width: 805px) {
-    .big-team {
-        display: none;
+@media (max-width:600px) {
+    .mat-grid-tile:nth-child(2) {
+        margin-top: 4%;
     }
-    .medium-team {
-        display: none;
+    .mat-grid-list {
+        margin-bottom: 18vh;
+        height: auto;
     }
-    .team-bar {
-        width: 100%;
-        margin-bottom: 5%;
-    }
-    .small-team {
-        display: block;
-    }
-    .the-team-card {
-        height: 100%;
-        padding: 0;
-        margin: 0;
-    }
-    .mat-card-image {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        display: block;
-    }
-
-    .mat-card-header {
-        padding: 2%;
-    }
-
-    .mat-expansion-panel {
-        position: reletive;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        box-shadow: none;
-    }
-
-  .mat-expansion-panel-header, .mat-expansion-panel-header-title {
-        color: #c1c4c8;
-        background: #313b47;
-    }
-    .mat-expansion-panel-header.mat-expanded .mat-expansion-panel-header-title, .mat-expansion-panel-header.mat-expanded {
-        color: #313b47;
-        background: #c1c4c8;
-    }
-    .mat-expansion-panel.mat-expanded {
+    .mat-grid-tile {
+        min-height: 60vh;
         position: relative;
-        bottom: 0;
-    }
-    .mat-expansion-panel:not([class*=mat-elevation-z]) {
-        box-shadow: unset;
-    }
-
-    .mat-expansion-panel:hover .mat-expansion-panel-header, .mat-expansion-panel:hover .mat-expansion-panel-header-title, .mat-expansion-panel-header-title:hover, .mat-expansion-panel-header.mat-expanded:focus, .mat-expansion-panel-header.mat-expanded:hover {
-        background: #c1c4c8;
-        color: #313b47;
-    }
-    .mat-divider {
-        margin: 5% auto;
-    }
-    p {
-        margin-bottom: 12%;
-    }
-
-    .expansion-buttons {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 48px;
-    }
-    .expansion-buttons button {
-        height: 99.5%;
-        width: 49.5%;
-        margin-top: .25%;
-        margin-bottom: .25%;
-        margin-left: .125%;
-    }
-    .expansion-buttons button:last-child {
-        margin-right: .125%;
+        top: unset!important;
     }
 }

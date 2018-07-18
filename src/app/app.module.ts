@@ -47,6 +47,7 @@ import { IfsServicesComponent } from './ifs-services/ifs-services.component';
 import { ContactComponent} from './contact/contact.component';
 import { IfsGalleryComponent } from './ifs-gallery/ifs-gallery.component';
 import { FooterComponent } from './footer/footer.component';
+import { ResponsiveColsDirective } from './responsive-cols.directive';
 
 
 
@@ -68,7 +69,8 @@ const appRoutes: Routes = [
     IfsServicesComponent,
     HomeComponent,
     FooterComponent,
-    IfsGalleryComponent
+    IfsGalleryComponent,
+    ResponsiveColsDirective
   ],
   imports: [
     MatInputModule,
