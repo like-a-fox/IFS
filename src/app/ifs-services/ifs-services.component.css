@@ -1,115 +1,70 @@
-.single-column {
-    display: none;
-}
-
-.services-card {
-    width: 48%;
+.mat-card {
     padding: 0;
-    position: relative;
-    display: block;
-    min-height: 30vh;
-    margin-bottom: 2%;
+    margin: 0;
+    display: inline-block;
+    width: 46%;
+    margin: 2%;
+    min-height: 400px;
 }
 
-.services-card .mat-card-title {
-    height: 50px;
-    line-height: 50px;
-    width: 95%;
-    padding-left: 5%;
-    background: #d7afaf;
-    color: #313b47;
-    letter-spacing: .1em;
-    font-size: 18px;
-    display: block;
-}
-
-.services-card .mat-card-subtitle {
-    padding: 0 5%;
-}
-
-.services-card .mat-card-content {
-    padding-left: 5%;
-    height: 100px;
-}
-
-.supplier-card {
-    width: 48%;
-    padding: 0;
-    position: relative;
-    display:block;
-    float: left;
-    min-height: 52vh;
-    margin-bottom: 2%;
-}
-
-
-.supplier-title {
+.mat-card-title {
     font-size: 18px;
     letter-spacing: .1em;
     display: block;
-    width: 95%;
     height: 50px;
     line-height: 50px;
     margin-bottom: 0;
     padding-left: 5%;
     background: #d7afaf;
     color: #313b47;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
 }
-.supplier-card .mat-card-content {
-    padding: 2% 5%;
-    height: 260px
+
+.mat-card-content {
+    position: absolute;
+    bottom:5%;
+    left:10%;
+    right:10%;
+    top:50px;
+    padding-top: 5%;
+    height: auto;
 }
+
 .mat-card-content span {
-    display: block;
+    display: inline-block;
     height: 25px;
     line-height: 25px;
-}
-.center-span {
-    display: block;
-    height: 30px;
-    line-height: 30px;
-    margin: 0 auto;
+    width: 50%;
+    text-transform: capitalize;
 }
 
-.left-card-list {
-    float: left;
-    width: 49%;
-    position: relative;
-    left: 0;
-    top: 0;
-}
-
-.right-card-list {
-    float: right;
-    width: 49%;
-    position: relative;
-    right: 0;
-    top: 0;
-
-}
-
-.contact-us-card button {
+.mat-card-content button {
     position: absolute;
-    bottom: 3.5%;
-    left: 3.5%;
-    right: 3.5%;
-    width: 93%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     background: #d2c0c0;
     font-size: 15px;
     letter-spacing: .1em;
     color: #313b47;
 }
 
-.contact-us-card button:hover {
+.mat-card-content button:hover {
     border: 2px solid #313b47;
 }
 
 @media (max-width: 680px) {
-    .services-card, .supplier-card {
+    .mat-card {
+        display: block;
         width: 90%;
         float: none;
         margin: 3% auto;
     }
+
 }
 
 

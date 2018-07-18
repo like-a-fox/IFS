@@ -1,3 +1,33 @@
-<p>
-  contact works!
-</p>
+<mat-card class="contact">
+  <mat-card-title class="mat-elevation-z2">
+    Send Us A Message
+  </mat-card-title>
+  <mat-card-content>
+      <form class="contact-form" [formGroup]="contact" (ngSubmit)="onSubmit()" >
+          <mat-form-field appearance="fill" class="full-width name-input" floatLabel="auto">
+              <input matInput placeholder="Name" formControlName="name" [errorStateMatcher]="matcher" required>
+            </mat-form-field>
+        
+          <mat-form-field appearance="fill" class="full-width email-input" floatLabel="auto">
+            <input matInput placeholder="Email" formControlName="email"
+                   [errorStateMatcher]="matcher" required>
+          </mat-form-field>
+        
+          <mat-form-field appearance="fill" class="full-width subject-input" floatLabel="auto">
+              <input matInput placeholder="Subject" formControlName="subject"
+                      [errorStateMatcher]="matcher" required>
+            </mat-form-field>
+        
+            <mat-form-field appearance="fill" class="full-width message-input" floatLabel="auto">
+                <textarea matInput matAutosizeMaxRows="20"
+                matAutosizeMinRows="10"
+                matTextareaAutosize 
+                placeholder="Contact us today!" 
+                formControlName="message" 
+                [errorStateMatcher]="matcher" 
+                required></textarea>
+              </mat-form-field>
+              <button mat-button [class.disabled]="contact.invalid" [disabled]="contact.invalid">Submit</button>
+        </form>
+  </mat-card-content>
+</mat-card>

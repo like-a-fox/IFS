@@ -1,50 +1,46 @@
 
-<mat-card class="services-card mat-elevation-z2">
-    <mat-card-title class="mat-elevation-z2">
-      Division 9 Services
-    </mat-card-title>
-    <mat-card-subtitle>
-      IFS Flooring LLC is a commercial flooring contractor specializing in all aspects of floor covering
-    </mat-card-subtitle>
-  <mat-card-content>
-    Ceramic and porcelain tile, modular and broadloom carpet, rubber flooring, luxury vinyl tile and plank, sheet vinyl, linoleum, VCT, gym floors, epoxy coatings, and stained and sealed concrete surfaces.
-  </mat-card-content>
-</mat-card>
+
 
   <mat-card class="supplier-card mat-elevation-z2">
-      <mat-card-title class="supplier-title mat-elevation-z2">
+      <mat-card-title class="mat-elevation-z2">
     Our Supplier Partners
       </mat-card-title>
 
     <mat-card-content>
-      <div class="left-card-list">
-        <span> <p class="center-span">- Daltile</p></span>
-        <span> <p class="center-span">- American Olean</p></span>
-        <span> <p class="center-span">- Marazzi Tile</p></span>
-        <span> <p class="center-span">- Armstrong</p></span>
-        <span> <p class="center-span">- Arizona Tile</p></span>
-        <span> <p class="center-span">- Interface Carpet</p></span>
-        <span> <p class="center-span">- Shaw Commercial</p></span>
-        <span> <p class="center-span">- Karndean</p></span>
-        
-      </div>
-      <div class="right-card-list">
-        <span> <p class="center-span">- Mohawk</p></span>
-        <span> <p class="center-span">- Beaulieu Carpets</p></span>
-        <span> <p class="center-span">- J&J Carpet</p></span>
-        <span> <p class="center-span">- Johnsonite</p></span>
-        <span> <p class="center-span">- Tandus – Centiva</p></span>
-        <span> <p class="center-span">- Roppe</p></span>
-        <span> <p class="center-span">- Mannington – Amtico</p></span>
-        <span> <p class="center-span">...just to name a few</p></span>
-      </div>
-      <mat-card-actions class="contact-us-card">
-        <button mat-button> Contact Us</button>
-      </mat-card-actions>
+          <span *ngFor="let supplier of suppliers; let right=odd;" [ngClass]="{ 'right': right }" >
+              {{ supplier.company }}
+              </span>
+          <button mat-button routerLink="/contact"> Contact Us</button>
     </mat-card-content>
   </mat-card>
   
-
+  <mat-card class="services-card mat-elevation-z2">
+      <mat-card-title class="mat-elevation-z2">
+        Division 9 Services
+      </mat-card-title>
+    <mat-card-content>
+        <span *ngFor="let material of materials; let right=odd;" [ngClass]="{ 'right': right }" >
+            {{ material.type }}
+            </span>
+    </mat-card-content>
+  </mat-card>
+  
+  <mat-card class="concrete-card mat-elevation-z2">
+    <mat-card-title class="mat-elevation-z2">
+      Concrete Surfacing
+    </mat-card-title>
+  <mat-card-content>
+    <p>
+        Our talented coating professionals can produce anything as basic as concrete sealing to high-tech performance toppings.
+    </p> 
+    <p>
+      This includes multicolored stains with metallic flecks or a fully ground subfloor receiving a bright new epoxy finish.
+    </p> 
+    <p>
+        IFS Concrete Surfacing is a solution for concrete areas that take continued abuse.
+    </p>
+  </mat-card-content>
+  </mat-card>
 
 
   

@@ -1,0 +1,66 @@
+
+.contact {
+    width: 48%;
+    padding: 0;
+    display:block;
+    min-height:550px;
+    margin-bottom: 2%;
+    float: right;
+}
+
+.contact .mat-card-title {
+    font-size: 18px;
+    letter-spacing: .1em;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+    padding-left: 5%;
+    background: #d7afaf;
+    color: #313b47;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+
+.contact .mat-card-content {
+    position: absolute;
+    bottom:5%;
+    left:10%;
+    right:10%;
+    top:50px;
+    padding-top: 5%;
+}
+
+
+.contact button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #d2c0c0;
+    font-size: 15px;
+    letter-spacing: .1em;
+    color: #313b47;
+}
+
+.contact button:hover {
+    border: 2px solid #313b47;
+}
+
+.contact button.disabled {
+    cursor: default;
+    color: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.3);
+}
+
+.contact button.disabled:hover {
+    border: none;
+}
+
+
+.full-width {
+    width:100%;
+}

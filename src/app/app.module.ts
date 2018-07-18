@@ -3,10 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
 
 //Design Modules
 import { 
   MatExpansionModule,
+  MatInputModule,
    MatToolbarModule, 
    MatButtonModule, 
    MatSidenavModule, 
@@ -19,6 +26,8 @@ import {
    MatPaginatorModule, 
    MatSortModule } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
 import { GalleryModule } from  '@ngx-gallery/core';
 import { LightboxModule } from  '@ngx-gallery/lightbox';
 import { GallerizeModule } from  '@ngx-gallery/gallerize';
@@ -61,6 +70,12 @@ const appRoutes: Routes = [
     IfsGalleryComponent
   ],
   imports: [
+    MatInputModule,
+    HttpClientModule,
+    FormsModule,
+    CdkTableModule,
+    CdkTreeModule,
+    ReactiveFormsModule,
     NgxMasonryModule,
     MatExpansionModule,
     SlideshowModule,
@@ -78,10 +93,13 @@ const appRoutes: Routes = [
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    GallerizeModule,
     GalleryModule.forRoot(),
     LightboxModule.forRoot(),
-    GallerizeModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [
     {provide: LocationStrategy, useClass: HashLocationStrategy}
