@@ -60,7 +60,22 @@
     border: none;
 }
 
+.mat-form-field {
+    font-size: 15px;
+}
+.label {
+    font-size: 10px;
+}
+
 
 .full-width {
     width:100%;
+}
+
+@media (max-width:800px) {
+    .contact {
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+    }
 }

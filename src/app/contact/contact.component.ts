@@ -1,26 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroupDirective, NgForm, Validators, FormBuilder, FormGroup} from '@angular/forms';
-import {ErrorStateMatcher} from '@angular/material/core';
+import { Validators, FormBuilder, FormGroup} from '@angular/forms';
 import { AngularFireDatabase } from '../../../node_modules/angularfire2/database';
 
 
-export class MyErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-    const isSubmitted = form && form.submitted;
-    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
-  }
-}
-
-export class ParentErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
-      const isSubmitted = !!(form && form.submitted);
-      const controlTouched = !!(control && (control.dirty || control.touched));
-      const controlInvalid = !!(control && control.invalid);
-      const parentInvalid = !!(control && control.parent && control.parent.invalid && (control.parent.dirty || control.parent.touched));
-
-      return isSubmitted || (controlTouched && (controlInvalid || parentInvalid));
-  }
-}
 
 @Component({
   selector: 'app-contact',
@@ -56,7 +38,6 @@ export class ContactComponent implements OnInit{
       this.contact.reset();
     }
   
-    matcher = new MyErrorStateMatcher();
   }
   
   

@@ -4,28 +4,27 @@
   </mat-card-title>
   <mat-card-content>
       <form class="contact-form" [formGroup]="contact" (ngSubmit)="onSubmit()" >
-          <mat-form-field appearance="fill" class="full-width name-input" floatLabel="auto">
-              <input matInput placeholder="Name" formControlName="name" [errorStateMatcher]="matcher" required>
+          <mat-form-field class="full-width name-input">
+              <input matInput placeholder="Name" formControlName="name" required >
             </mat-form-field>
         
-          <mat-form-field appearance="fill" class="full-width email-input" floatLabel="auto">
-            <input matInput placeholder="Email" formControlName="email"
-                   [errorStateMatcher]="matcher" required>
+          <mat-form-field class="full-width email-input">
+            <input matInput placeholder="Email" formControlName="email" required >
           </mat-form-field>
         
-          <mat-form-field appearance="fill" class="full-width subject-input" floatLabel="auto">
+          <mat-form-field class="full-width subject-input">
               <input matInput placeholder="Subject" formControlName="subject"
-                      [errorStateMatcher]="matcher" required>
+                     required >
             </mat-form-field>
         
-            <mat-form-field appearance="fill" class="full-width message-input" floatLabel="auto">
+            <mat-form-field class="full-width message-input">
                 <textarea matInput matAutosizeMaxRows="20"
                 matAutosizeMinRows="10"
                 matTextareaAutosize 
                 placeholder="Contact us today!" 
                 formControlName="message" 
-                [errorStateMatcher]="matcher" 
-                required></textarea>
+                 
+               required ></textarea>
               </mat-form-field>
               <button mat-button [class.disabled]="contact.invalid" [disabled]="contact.invalid">Submit</button>
         </form>
