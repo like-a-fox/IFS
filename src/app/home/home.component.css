@@ -38,6 +38,7 @@ mat-panel-title {
 }
 .finish-options {
     margin-top: 2%;
+    margin-bottom: 17vh;
 }
 
 @media (max-width: 680px) {

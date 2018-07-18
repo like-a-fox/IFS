@@ -1,46 +1,48 @@
 
-
-
+<div class="container">
   <mat-card class="supplier-card mat-elevation-z2">
-      <mat-card-title class="mat-elevation-z2">
-    Our Supplier Partners
-      </mat-card-title>
-
-    <mat-card-content>
-          <span *ngFor="let supplier of suppliers; let right=odd;" [ngClass]="{ 'right': right }" >
-              {{ supplier.company }}
-              </span>
-          <button mat-button routerLink="/contact"> Contact Us</button>
-    </mat-card-content>
-  </mat-card>
-  
-  <mat-card class="services-card mat-elevation-z2">
-      <mat-card-title class="mat-elevation-z2">
-        Division 9 Services
-      </mat-card-title>
-    <mat-card-content>
-        <span *ngFor="let material of materials; let right=odd;" [ngClass]="{ 'right': right }" >
-            {{ material.type }}
-            </span>
-    </mat-card-content>
-  </mat-card>
-  
-  <mat-card class="concrete-card mat-elevation-z2">
     <mat-card-title class="mat-elevation-z2">
-      Concrete Surfacing
+  Our Supplier Partners
+    </mat-card-title>
+
+  <mat-card-content>
+        <span *ngFor="let supplier of suppliers; let right=odd;" [ngClass]="{ 'right': right }" >
+            {{ supplier.company }}
+            </span>
+        <button mat-button routerLink="/contact"> Contact Us</button>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="services-card mat-elevation-z2">
+    <mat-card-title class="mat-elevation-z2">
+      Division 9 Services
     </mat-card-title>
   <mat-card-content>
-    <p>
-        Our talented coating professionals can produce anything as basic as concrete sealing to high-tech performance toppings.
-    </p> 
-    <p>
-      This includes multicolored stains with metallic flecks or a fully ground subfloor receiving a bright new epoxy finish.
-    </p> 
-    <p>
-        IFS Concrete Surfacing is a solution for concrete areas that take continued abuse.
-    </p>
+      <span *ngFor="let material of materials; let right=odd;" [ngClass]="{ 'right': right }" >
+          {{ material.type }}
+          </span>
   </mat-card-content>
-  </mat-card>
+</mat-card>
+
+<mat-card class="concrete-card mat-elevation-z2">
+  <mat-card-title class="mat-elevation-z2">
+    Concrete Surfacing
+  </mat-card-title>
+<mat-card-content>
+  <p>
+      Our talented coating professionals can produce anything as basic as concrete sealing to high-tech performance toppings.
+  </p> 
+  <p>
+    This includes multicolored stains with metallic flecks or a fully ground subfloor receiving a bright new epoxy finish.
+  </p> 
+  <p>
+      IFS Concrete Surfacing is a solution for concrete areas that take continued abuse.
+  </p>
+</mat-card-content>
+</mat-card>
+</div>
+
+ 
 
 
   
