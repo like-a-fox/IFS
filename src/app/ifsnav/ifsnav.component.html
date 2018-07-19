@@ -5,9 +5,7 @@
     aria-label="Toggle sidenav"
     (click)="drawer.toggle()"
     *ngIf="isNavHideSize$| async">
-    <span></span>
-    <span></span>
-    <span></span>
+    <mat-icon>menu</mat-icon>
   </button>
   <span>
     <a routerLink="/home">
@@ -22,17 +20,11 @@
     #drawer
     class="sidenav mat-elevation-z5"
     fixedInViewport="false"
+    autoFocus ="true"
     [attr.role]="(isNavHideSize$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isNavHideSize$ | async) ? 'over' : 'side'"
     [opened]="!(isNavHideSize$ | async)">
-    <mat-nav-list class="bigger-nav">
-      <a mat-list-item routerLink="/home" routerLinkActive="active-link mat-elevation-z.5">Home</a>
-      <a mat-list-item routerLink="/the-team" routerLinkActive="active-link mat-elevation-z.5">The Team</a>
-      <a mat-list-item routerLink="/ifs-services" routerLinkActive="active-link mat-elevation-z.5">Services</a>
-      <a mat-list-item routerLink="/contact" routerLinkActive="active-link mat-elevation-z.5">Contact</a>
-      <a mat-list-item routerLink="/ifs-gallery" routerLinkActive="active-link mat-elevation-z.5">Gallery</a>
-    </mat-nav-list>
-    <mat-nav-list class="smaller-nav" (click)="drawer.toggle()">
+    <mat-nav-list>
       <a mat-list-item routerLink="/home" routerLinkActive="active-link mat-elevation-z.5">Home</a>
       <a mat-list-item routerLink="/the-team" routerLinkActive="active-link mat-elevation-z.5">The Team</a>
       <a mat-list-item routerLink="/ifs-services" routerLinkActive="active-link mat-elevation-z.5">Services</a>

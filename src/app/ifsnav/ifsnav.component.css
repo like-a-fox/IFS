@@ -1,7 +1,6 @@
 .mat-sidenav-content {
   padding: 2%;
   margin-top: 64px;
-  height: 100vh;
   overflow: scroll;
   position: absolute;
   left: 0;
@@ -133,7 +132,7 @@ button.navbar-toggler {
 }
 @media (max-width:550px) {
   .sidenav {
-    width: 100%;
+    width: 75%;
   }
   .mat-nav-list .mat-list-item {
     width : 100%;
