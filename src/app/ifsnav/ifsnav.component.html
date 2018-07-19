@@ -24,7 +24,7 @@
     [attr.role]="(isNavHideSize$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isNavHideSize$ | async) ? 'over' : 'side'"
     [opened]="!(isNavHideSize$ | async)">
-    <mat-nav-list>
+    <mat-nav-list (click)="drawer.mode!='side' && drawer.toggle()">
       <a mat-list-item routerLink="/home" routerLinkActive="active-link mat-elevation-z.5">Home</a>
       <a mat-list-item routerLink="/the-team" routerLinkActive="active-link mat-elevation-z.5">The Team</a>
       <a mat-list-item routerLink="/ifs-services" routerLinkActive="active-link mat-elevation-z.5">Services</a>
