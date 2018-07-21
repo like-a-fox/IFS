@@ -1,27 +1,27 @@
-<mat-toolbar class="team-bar">The Team</mat-toolbar>
-<div class="container">
-    <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" rowHeight="630px" gutterSize="0" >
-        <mat-grid-tile *ngFor="let member of team;">
-            <mat-card class="mat-elevation-z3">
-                <mat-card-header>
-                    <mat-card-title>
-                        {{ member.member }}
-                      </mat-card-title>
-                      <mat-card-subtitle>
-                      {{ member. position }}
-                      </mat-card-subtitle>
-                </mat-card-header>
-                <img mat-card-image [src]="member.image" [alt]="member.member" >
-                <mat-card-content>
-                    {{ member.bio }}
-                </mat-card-content>
-                <mat-card-actions class="card-contact">
-                    <a href="{{member.phone}}" >CALL</a>
-                    <a href="{{member.email}}" >EMAIL</a>
-                  </mat-card-actions>
-              </mat-card>
-        </mat-grid-tile>
-       </mat-grid-list>
-</div>
 
+<div class="container">
+    <mat-toolbar class="team-bar">The Team</mat-toolbar>
+        <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" rowHeight="630px" gutterSize="0" >
+            <mat-grid-tile *ngFor="let member of team;">
+                <mat-card class="mat-elevation-z3">
+                    <mat-card-header>
+                        <mat-card-title>
+                            {{ member.member }}
+                          </mat-card-title>
+                          <mat-card-subtitle>
+                          {{ member. position }}
+                          </mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image [src]="member.image" [alt]="member.member" >
+                    <mat-card-content>
+                        {{ member.bio }}
+                    </mat-card-content>
+                    <mat-card-actions class="card-contact">
+                        <a href="{{member.phone}}" >CALL</a>
+                        <a href="{{member.email}}" >EMAIL</a>
+                      </mat-card-actions>
+                  </mat-card>
+            </mat-grid-tile>
+           </mat-grid-list>
+</div>
 

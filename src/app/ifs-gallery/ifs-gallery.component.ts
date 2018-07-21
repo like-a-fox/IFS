@@ -22,17 +22,17 @@ export class IfsGalleryComponent implements OnInit {
 
   masonryImages;
 
-  limit = 15;
+
 
   constructor(public gallery: Gallery, public lightbox: Lightbox) {
   }
   
   public masonryOptions: NgxMasonryOptions = {
 		transitionDuration: '0.2s',
-		gutter: 20,
 		resize: true,
 		initLayout: true,
-		fitWidth: true
+
+    percentPosition: true
   };
   
 

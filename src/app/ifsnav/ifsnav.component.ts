@@ -5,6 +5,7 @@ import { map } from 'rxjs/operators';
 import { MatSidenav } from '../../../node_modules/@angular/material';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'ifsnav',
   templateUrl: './ifsnav.component.html',
   styleUrls: ['./ifsnav.component.css']

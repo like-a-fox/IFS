@@ -1,43 +1,7 @@
-<mat-grid-list class="big" cols="4" rowHeight="80px" gutterSize="10">
-  <mat-grid-tile colspan="2">
-      <mat-card class="main-card">
-          <mat-card-header>
-            <mat-card-title>
-            IFS FLOORING LLC
-            </mat-card-title>
-            <mat-card-subtitle>
-            The Arizona Commercial Flooring Dealer
-            </mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-      <mat-card class="main-card">
-          <mat-card-header>
-            <mat-card-title>
-            Phoenix Office
-            </mat-card-title>
-            <mat-card-subtitle>
-                (623) 434-9025
-            </mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
-  </mat-grid-tile>
-  <mat-grid-tile>
-      <mat-card class="main-card">
-          <mat-card-header>
-            <mat-card-title>
-            Tucson Office
-            </mat-card-title>
-            <mat-card-subtitle>
-            (520) 888-2211
-            </mat-card-subtitle>
-          </mat-card-header>
-        </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
 
-<mat-grid-list class="medium" cols="2" rowHeight="80px" gutterSize="10">
+
+<div class="container">
+  <mat-grid-list class="big" cols="4" rowHeight="80px" gutterSize="10">
     <mat-grid-tile colspan="2">
         <mat-card class="main-card">
             <mat-card-header>
@@ -75,52 +39,65 @@
           </mat-card>
     </mat-grid-tile>
   </mat-grid-list>
-
-<div class="slideshow">
-    <slideshow 
-    [imageUrls]="imageUrls"
-    [autoPlay]="autoPlay"
-    [autoPlayInterval]="autoPlayInterval"
-    [showArrows]="showArrows"></slideshow>
-</div>
-
-    <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            More About The Company
-          </mat-panel-title>  
-        </mat-expansion-panel-header>
-        <p>IFS Flooring LLC serves our customers and employees with leadership, pride, and innovations.</p>
-        <p>Under its current ownership, IFS Flooring was established in 2008. </p>
-        <p>We are a full-service commercial flooring contractor dedicated to providing superior customer service in the Arizona marketplace!</p>
-      </mat-expansion-panel>
-      <mat-grid-list cols="3" rowHeight="2:1" class="big-images">
-          <mat-grid-tile routerLink="/the-team" class="reliability value-cards">
-            <mat-card class="value-card-sections">
-              
-              <mat-card-content>
-                      reliability
-              </mat-card-content>
+  
+  <mat-grid-list class="medium" cols="2" rowHeight="80px" gutterSize="10">
+      <mat-grid-tile colspan="2">
+          <mat-card class="main-card">
+              <mat-card-header>
+                <mat-card-title>
+                IFS FLOORING LLC
+                </mat-card-title>
+                <mat-card-subtitle>
+                The Arizona Commercial Flooring Dealer
+                </mat-card-subtitle>
+              </mat-card-header>
             </mat-card>
-
-          </mat-grid-tile>
-          <mat-grid-tile routerLink="/ifs-services" class="workmanship value-cards">
-            <mat-card class="value-card-sections">
-                                <mat-card-content>
-                        workmanship
-                </mat-card-content>
-              </mat-card>
-          </mat-grid-tile>
-          <mat-grid-tile routerLink="/ifs-gallery" class="experience value-cards">
-            <mat-card class="value-card-sections">
-                               <mat-card-content>
-                        experience
-                </mat-card-content>
-              </mat-card>
-          </mat-grid-tile>
-        </mat-grid-list>
-        
-        <mat-grid-list cols="1" rowHeight="100vh" class="small-images">
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-card class="main-card">
+              <mat-card-header>
+                <mat-card-title>
+                Phoenix Office
+                </mat-card-title>
+                <mat-card-subtitle>
+                    (623) 434-9025
+                </mat-card-subtitle>
+              </mat-card-header>
+            </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-card class="main-card">
+              <mat-card-header>
+                <mat-card-title>
+                Tucson Office
+                </mat-card-title>
+                <mat-card-subtitle>
+                (520) 888-2211
+                </mat-card-subtitle>
+              </mat-card-header>
+            </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  
+  <div class="slideshow">
+      <slideshow 
+      [imageUrls]="imageUrls"
+      [autoPlay]="autoPlay"
+      [autoPlayInterval]="autoPlayInterval"
+      [showArrows]="showArrows"></slideshow>
+  </div>
+  
+      <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              More About The Company
+            </mat-panel-title>  
+          </mat-expansion-panel-header>
+          <p>IFS Flooring LLC serves our customers and employees with leadership, pride, and innovations.</p>
+          <p>Under its current ownership, IFS Flooring was established in 2008. </p>
+          <p>We are a full-service commercial flooring contractor dedicated to providing superior customer service in the Arizona marketplace!</p>
+        </mat-expansion-panel>
+        <mat-grid-list cols="3" rowHeight="2:1" class="big-images">
             <mat-grid-tile routerLink="/the-team" class="reliability value-cards">
               <mat-card class="value-card-sections">
                 
@@ -144,19 +121,43 @@
                   </mat-card-content>
                 </mat-card>
             </mat-grid-tile>
-        </mat-grid-list>
-      <mat-expansion-panel class="finish-options">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Offered Flooring Finishes
-            </mat-panel-title>  
-          </mat-expansion-panel-header>
-          <p>Commercial carpeting, ceramic tile and marble;</p>
-          <p>resilient surfaces, such as vinyl, rubber, luxury vinyl tile and cork;</p>
-          <p>and concrete coatings such as stain, seal, and epoxy.</p>
-        </mat-expansion-panel>
+          </mat-grid-list>
+          
+          <mat-grid-list cols="1" rowHeight="100vh" class="small-images">
+              <mat-grid-tile routerLink="/the-team" class="reliability value-cards">
+                <mat-card class="value-card-sections">
+                  
+                  <mat-card-content>
+                          reliability
+                  </mat-card-content>
+                </mat-card>
+    
+              </mat-grid-tile>
+              <mat-grid-tile routerLink="/ifs-services" class="workmanship value-cards">
+                <mat-card class="value-card-sections">
+                                    <mat-card-content>
+                            workmanship
+                    </mat-card-content>
+                  </mat-card>
+              </mat-grid-tile>
+              <mat-grid-tile routerLink="/ifs-gallery" class="experience value-cards">
+                <mat-card class="value-card-sections">
+                                   <mat-card-content>
+                            experience
+                    </mat-card-content>
+                  </mat-card>
+              </mat-grid-tile>
+          </mat-grid-list>
+        <mat-expansion-panel class="finish-options">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Offered Flooring Finishes
+              </mat-panel-title>  
+            </mat-expansion-panel-header>
+            <p>Commercial carpeting, ceramic tile and marble;</p>
+            <p>resilient surfaces, such as vinyl, rubber, luxury vinyl tile and cork;</p>
+            <p>and concrete coatings such as stain, seal, and epoxy.</p>
+          </mat-expansion-panel>
+</div>
 
 
-
-
-<ifs-footer></ifs-footer>

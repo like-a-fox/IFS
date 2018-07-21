@@ -4,7 +4,7 @@
   </mat-card-title>
   <mat-card-content>
 
-        <ngx-masonry [options]="masonryOptions" [useImagesLoaded]="true" >
+        <ngx-masonry [updateLayout]="true" [options]="masonryOptions" [useImagesLoaded]="true"  >
             <ngxMasonryItem *ngFor="let img of imageData; let i = index" (click)="lightbox.open(0, 'lightbox')" class="masonry-item">
               <img [src]="img.srcUrl">
             </ngxMasonryItem>

@@ -1,3 +1,12 @@
+.container {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    right: 3%;
+    bottom: calc(64px + 3%);
+    overflow: scroll;
+}
+
 .main-card {
     width: 100%;
     margin: 0 auto;
@@ -31,6 +40,9 @@ mat-expansion-panel {
 
 mat-expansion-panel-header {
 background: #d7afaf;
+}
+.mat-expansion-panel-header:focus, .mat-expansion-panel-header:hover {
+    background: #d7afaf!important;
 }
 
 mat-panel-title {
@@ -156,6 +168,9 @@ mat-panel-title {
     .small-images {
         display: block;
         height: 120vh;
+    }
+    .container {
+        bottom: calc(56px + 3%);
     }
     .big-images {
         display:none;

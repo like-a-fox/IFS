@@ -1,11 +1,13 @@
 .gallery-card {
-    position: relative;
+    position: absolute;
     display: block;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 2% 0;
-
-
+    top: 3%;
+    bottom: 11%;
+    left: 3%;
+    right: 3%;
+    overflow: hidden;
+    margin:0;
+    padding: 0;
 }
 
 .gallery-card .mat-card-title {
@@ -23,20 +25,25 @@
 }
 
 .gallery-card .mat-card-content {
-    height: 74vh;
-    overflow: scroll;
+  overflow: scroll;
+  position: absolute;
+  top: calc(50px + 2%);
+  bottom: 2%;
+  left: 2%;
+  right: 2%;
 }
 
 ngx-masonry {
-    margin: 0 auto;
+    margin: 0;
+    width:100%;
 }
 
 .masonry-item {
-    margin-bottom: 20px;
+    margin-bottom: 1%;
+    margin-left: 1%;
     background-color: #313b47;
-    background-size: cover;
-    max-width:320px;
-    
+    width:32%;
+
 }
 
 .masonry-item img {
@@ -44,13 +51,17 @@ ngx-masonry {
     display:block;
     cursor: pointer;
 }
-@media (max-width: 750px) {
+
+@media (max-width: 800px) {
     .masonry-item {
-        max-width: 250px;
+        width: 48%;
+        margin-left: 2%;
+        margin-bottom: 2%;
     }
 }
-@media (max-width: 550px) {
+
+@media (max-width: 500px) {
     .masonry-item {
-        max-width: 400px;
+       width: 100%;
     }
 }

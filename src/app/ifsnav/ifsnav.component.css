@@ -1,10 +1,10 @@
 .mat-sidenav-content {
-  padding: 2%;
-  margin-top: 64px;
   overflow: scroll;
   position: absolute;
   left: 0;
   right: 0;
+  top:64px;
+  bottom:0;
 }
 .sidenav-container {
   min-height: 100%;
@@ -89,6 +89,10 @@ button.navbar-toggler {
   top: 24px;
 }
 
+.mat-list-item:focus {
+  background-color: #d7afaf;
+}
+
 .navbar-toggler span:nth-child(2) {
   top: 32px;
 }
@@ -130,11 +134,14 @@ button.navbar-toggler {
     top: 56px;
   }
 }
-@media (max-width:550px) {
+@media (max-width:600px) {
   .sidenav {
     width: 75%;
   }
   .mat-nav-list .mat-list-item {
     width : 100%;
+  }
+  .mat-sidenav-content {
+    top: 56px;
   }
 }

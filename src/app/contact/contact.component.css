@@ -4,8 +4,9 @@
     padding: 0;
     display:block;
     min-height:550px;
-    margin-bottom: 2%;
-    float: right;
+    position: absolute;
+    top:4%;
+    right:4%;
 }
 
 .contact .mat-card-title {
@@ -74,8 +75,8 @@
 
 @media (max-width:800px) {
     .contact {
-        float: none;
-        margin: 0 auto;
+        left: 5%;
+        right: 5%;
         width: 90%;
     }
 }
