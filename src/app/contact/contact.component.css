@@ -35,30 +35,37 @@
 }
 
 
-.contact button {
+.submit-button {
     position: absolute;
     bottom: 0;
     left: 0;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
     right: 0;
     width: 100%;
-    background: #d2c0c0;
+    background: #d7afaf;
     font-size: 15px;
     letter-spacing: .1em;
     color: #313b47;
+    cursor: pointer;
 }
 
-.contact button:hover {
-    border: 2px solid #313b47;
+.submit-button:hover {
+    outline: 2px solid #d7afaf;
+    background: transparent;
+    color: #d7afaf;
 }
 
-.contact button.disabled {
+.submit-button.disabled {
     cursor: default;
     color: rgba(0,0,0,.3);
     background: rgba(0,0,0,.3);
 }
 
-.contact button.disabled:hover {
+.submit-button.disabled:hover {
     border: none;
+    outline: none;
 }
 
 .mat-form-field {

@@ -1,6 +1,6 @@
 .container {
     position: absolute;
-    top: 3%;
+    top: 0;
     left: 3%;
     right: 3%;
     bottom: calc(64px + 3%);
@@ -10,13 +10,13 @@
 .team-bar {
     color:#313b47; 
     background:  #d7afaf;
-    margin: 0 auto;
+    margin: 3% auto 0 auto;
     width: 98%;
     font-size: 18px;
 }
 
 .mat-grid-tile {
-    min-height: 64vh;
+    min-height: 70vh;
     padding: 0;
     margin-bottom: 5%;
     overflow: visible;
@@ -29,6 +29,7 @@
     width: 100%;
     margin: 3%;
     padding: 0;
+    border-radius: none;
 }
 .mat-card-header {
     margin: 0 4%;
@@ -46,7 +47,7 @@
     margin: 0;
 }
 .mat-card-image {
-    height: 45%;
+    height: 50%;
     width: auto;
     margin: 0 auto;
     display: block;
@@ -87,8 +88,13 @@
 .mat-card-actions a:first-child {
     left: 7.5%;
 }
-.mat-card-actions a:hover {
-    border: 2px solid #313b47;
+.mat-card-actions a:hover, .mat-card-actions a:focus {
+    outline: 2px solid #d7afaf;
+    background: transparent!important;
+    color: #d7afaf;
+}
+button.mat-button:hover {
+    background: transparent!important;
 }
 @media (max-width:1200px) {
     .mat-grid-tile:last-child {

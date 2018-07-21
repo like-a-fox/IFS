@@ -55,21 +55,30 @@
     text-transform: capitalize;
 }
 
-.mat-card-content button {
+.contact {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100%;
-    background: #d2c0c0;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    background: #d7afaf;
     font-size: 15px;
     letter-spacing: .1em;
     color: #313b47;
+    border: none;
+    cursor: pointer;
+    text-align: center;
 }
 
-.mat-card-content button:hover {
-    border: 2px solid #313b47;
+.contact:hover {
+    outline: 2px solid #d7afaf;
+    background: transparent;
+    color: #d7afaf;
 }
+
 
 @media (max-width: 680px) {
     .mat-card {
