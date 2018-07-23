@@ -1,8 +1,15 @@
+.mat-toolbar {
+    width: unset;
+    margin: 2% 3%;
+    background: #d7afaf;
+    color: #5b6572;
+}
+
 .gallery-card {
     position: absolute;
     display: block;
-    top: 3%;
-    bottom: 11%;
+    top: calc(64px + 6%);
+    bottom: 3%;
     left: 3%;
     right: 3%;
     overflow: hidden;
@@ -10,24 +17,11 @@
     padding: 0;
 }
 
-.gallery-card .mat-card-title {
-    font-size: 18px;
-    position: relative;
-    display: block;
-    letter-spacing: .1em;
-    width: 95%;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 auto 2% auto;
-    padding-left: 5%;
-    background: #d7afaf;
-    color: #313b47;
-}
 
 .gallery-card .mat-card-content {
   overflow: scroll;
   position: absolute;
-  top: calc(50px + 2%);
+  top: 2%;
   bottom: 2%;
   left: 2%;
   right: 2%;

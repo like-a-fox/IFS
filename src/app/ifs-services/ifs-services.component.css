@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: calc(64px + 3%);
+    bottom: 0;
     overflow: scroll;
 }
 
@@ -30,7 +30,7 @@
     margin-bottom: 0;
     padding-left: 5%;
     background: #d7afaf;
-    color: #313b47;
+    color: #5b6572;
     position: absolute;
     top:0;
     left:0;
@@ -67,7 +67,7 @@
     background: #d7afaf;
     font-size: 15px;
     letter-spacing: .1em;
-    color: #313b47;
+    color: #5b6572;
     border: none;
     cursor: pointer;
     text-align: center;

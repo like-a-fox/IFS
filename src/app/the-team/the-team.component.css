@@ -1,116 +1,53 @@
-.container {
-    position: absolute;
-    top: 0;
-    left: 3%;
-    right: 3%;
-    bottom: calc(64px + 3%);
-    overflow: scroll;
-}
 
 .team-bar {
-    color:#313b47; 
+    color:#5b6572; 
     background:  #d7afaf;
-    margin: 3% auto 0 auto;
-    width: 98%;
+    margin: 2% 3%;
+    width: unset;
     font-size: 18px;
 }
-
+.mat-grid-list {
+    margin: 2% 3%;
+    
+}
 .mat-grid-tile {
-    min-height: 70vh;
-    padding: 0;
-    margin-bottom: 5%;
     overflow: visible;
 }
-.mat-grid-tile:last-child {
-    margin-top: 0;
-}
 .mat-card {
-    height: 95%;
-    width: 100%;
-    margin: 3%;
-    padding: 0;
-    border-radius: none;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 5%;
 }
-.mat-card-header {
-    margin: 0 4%;
-    padding: 0;
-    height: 10%;
-    width: 100%;
-}
-
-.mat-card-title {
-    padding: 6% 0;
-    margin: 0;
-}
-.mat-card-subtitle {
-    padding:0;
-    margin: 0;
-}
-.mat-card-image {
-    height: 50%;
-    width: auto;
-    margin: 0 auto;
-    display: block;
-}
-
-.mat-card-content {
-    height: 25%;
-    margin: 6%;
-}
-.mat-card-actions {
+.mat-card div {
+    width: 50%;
+    text-align: center;
     position: absolute;
     bottom: 0;
-    height: 9%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
-.mat-card>.mat-card-actions:last-child {
-    margin-bottom: 0!important;
+.mat-card-image {
+    width: 110%;
+    margin: 4% -5%;
 }
-.mat-card-actions a {
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
+.bl-action {
+    left: 0;
+}
+.br-action {
+    right:0;
+}
+.mat-card div a {
+    height: 40px;
+    line-height: 40px;
     text-decoration: none;
-    color: #313b47;
-    text-transform: capitalize;
-    display: inline-flex;
-    flex-direction: column;
-    width: 40%;
-    position: absolute;
-    bottom: 15px;
+    color: #5b6572;
     background: #d7afaf;
+    cursor: pointer;
+    display: -webkit-flex;
+    justify-content: center;
+    margin: 3%;
 }
-.mat-card-actions a:last-child {
-    right: 7.5%;
+.mat-card div a:hover {
+    color:#d7afaf;
+    background: #5b6572;
 }
-.mat-card-actions a:first-child {
-    left: 7.5%;
-}
-.mat-card-actions a:hover, .mat-card-actions a:focus {
-    outline: 2px solid #d7afaf;
-    background: transparent!important;
-    color: #d7afaf;
-}
-button.mat-button:hover {
-    background: transparent!important;
-}
-@media (max-width:1200px) {
-    .mat-grid-tile:last-child {
-        margin-top: 0;
-    }
-}
-@media (max-width:600px) {
 
-    .mat-grid-list {
-        margin-bottom: 18vh;
-        height: auto;
-    }
-    .mat-grid-tile {
-        min-height: 60vh;
-        position: relative;
-        top: unset!important;
-        margin: 0;
-    }
-}

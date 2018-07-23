@@ -25,7 +25,7 @@ import {
    MatTableModule, 
    MatPaginatorModule, 
    MatSortModule, 
-   MAT_LABEL_GLOBAL_OPTIONS} from '@angular/material';
+   } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';

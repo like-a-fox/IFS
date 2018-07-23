@@ -5,15 +5,15 @@
     aria-label="Toggle sidenav"
     (click)="drawer.toggle()"
     *ngIf="isNavHideSize$| async">
-    <mat-icon>menu</mat-icon>
+    <mat-icon [svgIcon]="isDrawerOpen ? 'menu-expand' : 'menu-collapse'"></mat-icon>
+    <img src="../../assets/logo.png" alt="logo">
   </button>
-  <span>
     <a routerLink="/home">
-      <div class="logo-button">
-      </div>
+     <img src="../../assets/logo.png" alt="logo">
+     <div class="company-name">IFS Flooring, LLC</div> 
     </a>
-    </span>
-    IFS Flooring, LLC
+
+    
 </mat-toolbar>
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav
