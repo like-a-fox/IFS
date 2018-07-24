@@ -1,12 +1,11 @@
-<mat-toolbar class="header mat-elevation-z.5" color="primary">
+<mat-toolbar class="header mat-elevation-z1" color="primary">
     <button
     class="navbar-toggler"
     type="button"
     aria-label="Toggle sidenav"
     (click)="drawer.toggle()"
     *ngIf="isNavHideSize$| async">
-    <mat-icon [svgIcon]="isDrawerOpen ? 'menu-expand' : 'menu-collapse'"></mat-icon>
-    <img src="../../assets/logo.png" alt="logo">
+    <mat-icon [svgIcon]="isDrawerOpen ? 'unfold' : 'fold'"></mat-icon>
   </button>
     <a routerLink="/home">
      <img src="../../assets/logo.png" alt="logo">
@@ -25,11 +24,11 @@
     [mode]="(isNavHideSize$ | async) ? 'over' : 'side'"
     [opened]="!(isNavHideSize$ | async)">
     <mat-nav-list (click)="drawer.mode!='side' && drawer.toggle()">
-      <a mat-list-item routerLink="/home" routerLinkActive="active-link mat-elevation-z.5">Home</a>
-      <a mat-list-item routerLink="/the-team" routerLinkActive="active-link mat-elevation-z.5">The Team</a>
-      <a mat-list-item routerLink="/ifs-services" routerLinkActive="active-link mat-elevation-z.5">Services</a>
-      <a mat-list-item routerLink="/contact" routerLinkActive="active-link mat-elevation-z.5">Contact</a>
-      <a mat-list-item routerLink="/ifs-gallery" routerLinkActive="active-link mat-elevation-z.5">Gallery</a>
+      <a mat-list-item routerLink="/home" routerLinkActive="active-link mat-elevation-z1">Home</a>
+      <a mat-list-item routerLink="/the-team" routerLinkActive="active-link mat-elevation-z1">The Team</a>
+      <a mat-list-item routerLink="/ifs-services" routerLinkActive="active-link mat-elevation-z1">Services</a>
+      <a mat-list-item routerLink="/contact" routerLinkActive="active-link mat-elevation-z1">Contact</a>
+      <a mat-list-item routerLink="/ifs-gallery" routerLinkActive="active-link mat-elevation-z1">Gallery</a>
     </mat-nav-list>
 
   </mat-sidenav>

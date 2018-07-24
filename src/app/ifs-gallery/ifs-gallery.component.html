@@ -1,14 +1,15 @@
 
 
 <div class=container>
-    <mat-toolbar class="mat-elevation-z1">
-        Recently Completed Work
-      </mat-toolbar>
+
   <mat-card class="gallery-card">
+  <mat-card-title>
+      Recently Completed Work
+  </mat-card-title>
     <mat-card-content>
   
-          <ngx-masonry [updateLayout]="true" [options]="masonryOptions" [useImagesLoaded]="true"  >
-              <ngxMasonryItem *ngFor="let img of imageData; let i = index" (click)="lightbox.open(0, 'lightbox')" class="masonry-item">
+          <ngx-masonry [updateLayout]="true" [options]="masonryOptions" [useImagesLoaded]="true">
+              <ngxMasonryItem *ngFor="let img of imageData; let i = index" (click)="lightbox.open(i)" class="masonry-item mat-elevation-z4">
                 <img [src]="img.srcUrl">
               </ngxMasonryItem>
             </ngx-masonry> 

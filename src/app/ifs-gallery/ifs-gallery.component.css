@@ -1,43 +1,40 @@
-.mat-toolbar {
-    width: unset;
-    margin: 2% 3%;
-    background: #d7afaf;
-    color: #5b6572;
-}
 
 .gallery-card {
-    position: absolute;
+    position: relative;
     display: block;
-    top: calc(64px + 6%);
-    bottom: 3%;
-    left: 3%;
-    right: 3%;
-    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
     margin:0;
     padding: 0;
+}
+.gallery-card .mat-card-title {
+    height: 64px;
+    background: #d7afaf;
+    color: #5b6572;
+    padding-left: 3%;
+    line-height: 64px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
 
 
 .gallery-card .mat-card-content {
-  overflow: scroll;
-  position: absolute;
-  top: 2%;
-  bottom: 2%;
-  left: 2%;
-  right: 2%;
+  position: relative;
+  padding-left: 10px;
 }
 
 ngx-masonry {
-    margin: 0;
+    margin: 0 auto;
     width:100%;
 }
 
 .masonry-item {
-    margin-bottom: 1%;
-    margin-left: 1%;
+    margin-bottom: 10px;
     background-color: #313b47;
-    width:32%;
-
+    width:calc(33.333% - 10px);
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 .masonry-item img {
@@ -48,14 +45,22 @@ ngx-masonry {
 
 @media (max-width: 800px) {
     .masonry-item {
-        width: 48%;
-        margin-left: 2%;
-        margin-bottom: 2%;
+        width:calc(50% - 10px);
+        margin-bottom: 10px;
     }
 }
-
+@media (max-width:600px) {
+    .gallery-card .mat-card-title {
+        height: 56px;
+        line-height: 56px;
+    }
+}
 @media (max-width: 500px) {
     .masonry-item {
        width: 100%;
+       margin-left: 0;
+    }
+    .gallery-card .mat-card-content {
+        padding: 0 2%;
     }
 }

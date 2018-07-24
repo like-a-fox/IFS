@@ -1,27 +1,26 @@
+<mat-toolbar class="team-bar mat-elevation-z3">The Team</mat-toolbar>
+   
+    <div class="flex-grid">
 
-    <mat-toolbar class="team-bar">The Team</mat-toolbar>
-        <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" rowHeight="1:1.9" gutterSize="10">
-            <mat-grid-tile *ngFor="let member of team;">
-                <mat-card class="mat-elevation-z3">
-                    <mat-card-header>
-                        <mat-card-title>
-                            {{ member.member }}
-                          </mat-card-title>
-                          <mat-card-subtitle>
-                          {{ member. position }}
-                          </mat-card-subtitle>
-                    </mat-card-header>
-                    <img mat-card-image [src]="member.image" [alt]="member.member" >
-                    <mat-card-content>
-                        {{ member.bio }}
-                    </mat-card-content>
-                    <div class="bl-action">
-                            <a href="{{member.phone}}" >Call</a>
-                    </div>
-                    <div class="br-action">
-                            <a href="{{member.email}}" >Email</a>
-                    </div>   
-                  </mat-card>
-            </mat-grid-tile>
-           </mat-grid-list>
+        <mat-card *ngFor="let member of team;" class="mat-elevation-z3">
+            <mat-card-header class="mat-elevation-z0">
+                <mat-card-title>
+                    {{ member.member }}
+                  </mat-card-title>
+                  <mat-card-subtitle>
+                  {{ member. position }}
+                  </mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image [src]="member.image" [alt]="member.member" >
+            <mat-card-content>
+                {{ member.bio }}
+            </mat-card-content>
+            <div class="actions">
+                    <a href="{{member.phone}}" >Call</a>
+                    <a href="{{member.email}}" >Email</a>
+            </div>
+          </mat-card>
+    </div>
+
+           <ifs-footer></ifs-footer>
 

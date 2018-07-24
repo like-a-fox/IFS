@@ -1,96 +1,11 @@
-.footer-images {
-    display: none;
-}
-
-span {
-    text-transform: uppercase;
-    display:table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 22px;
-    color: #c1c4c8;
-    background: rgba(0,0,0,.6);
-    width: 100%;
-    padding: 50% 0;
-
-}
-.reliability:hover span {
-    display: none;
-}
-
-.reliability span {
-    background-image: url('../../assets/ValueButtons/reliablility.jpeg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 4%;
-}
-
-.reliability {
-
-    cursor: pointer;
-    margin-right: 4%;
-}
-
-.workmanship:hover span {
-    display:none;
-}
-
-.workmanship span {
-    background-image: url('../../assets/ValueButtons/workmanship.jpeg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 4%;
-}
-
-.workmanship {
-
-    cursor: pointer;
-    margin-right: 4%;
-}
-
-.experience:hover span {
-    display:none;
-}
-
-.experience span {
-    background-image: url('../../assets/ValueButtons/experience.jpeg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 0;
-}
-
-.experience {
-
-    cursor: pointer;
-    margin-right: 4%;
-}
-.mat-divider {
-    margin: 3% auto;
-}
-
-footer {
-    position: relative;
-    bottom: 25px;
-    text-transform: capitalize;
-    height: 35px;
-    line-height: 35px;
+.footer {
+    display: flex;
+    right:0;
+    left:0;
+    padding-bottom: 0.5%;
+    padding-top: 0;
+    justify-content: center;
+    color: #5b6572;
     font-size: 12px;
-    text-align: center;
-}
-
-
-
-@media (max-width: 600px) {
-    .small-images {
-        display: none;
-    }
-    .big-images {
-        display:none;
-    }
-    .mat-grid-tile span {
-        margin: 2%;
-    }
+    position: absolute;
 }

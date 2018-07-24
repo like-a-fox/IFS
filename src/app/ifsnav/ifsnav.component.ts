@@ -36,10 +36,10 @@ public get isDrawerOpen():boolean{
     
   constructor(private breakpointObserver: BreakpointObserver, iconRegistry : MatIconRegistry, sanitizer : DomSanitizer) {
     iconRegistry.addSvgIcon(
-      'menu-expand',
-      sanitizer.bypassSecurityTrustResourceUrl('../../assets/expand-menu.svg'));
+      'unfold',
+      sanitizer.bypassSecurityTrustResourceUrl('../../assets/unfold.svg'));
       iconRegistry.addSvgIcon(
-        'menu-collapse',
-        sanitizer.bypassSecurityTrustResourceUrl('../../assets/collapse-menu.svg'));
+        'fold',
+        sanitizer.bypassSecurityTrustResourceUrl('../../assets/fold.svg'));
   }
 }

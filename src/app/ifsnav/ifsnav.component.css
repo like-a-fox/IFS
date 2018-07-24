@@ -2,7 +2,8 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  padding-left: 0;
+  padding-left: 1%;
+  padding-right: 1%;
   background-color: #5b6572;
   color: #d7afaf;
 }
@@ -13,19 +14,13 @@
   height: 64px;
   width: 280px;
   box-sizing: border-box;
-  padding-left: 16px;
 }
 .mat-toolbar a:hover {
-  color: #5b6572;
-  background:#d7afaf;
-  outline: 2px #5b6572 solid;
-  outline-offset: -2px;
   cursor: pointer;
 }
 .mat-toolbar .company-name {
   font-weight: 70;
-  font-size: .8em;
-  font-style: italic;
+  font-size: 16px;
   letter-spacing: -1%;
   text-transform: uppercase;
   padding-left: 5px;
@@ -38,9 +33,7 @@
   height: auto;
   width: 64px;
 }
-.mat-toolbar a:hover img {
-  filter: hue-rotate(200deg) brightness(50%) ;
-}
+
 .sidenav {
   position: fixed;
   width: 280px;
@@ -53,6 +46,8 @@
 }
 .mat-list-item {
   height: 64px!important;
+  color: #5b6572;
+  font-weight: 100;
 }
 .mat-list-item:hover, .mat-list-item:focus {
   outline: none!important;
@@ -62,6 +57,7 @@
 .active-link {
   background: #d7afaf;
   color: #5b6572;
+  font-weight: 600;
 }
 .mat-sidenav-content {
   overflow: scroll;
@@ -70,6 +66,8 @@
   right: 0;
   top:64px;
   bottom:0;
+  box-sizing: border-box;
+  padding: 1%;
 }
 .mat-drawer-content {
   height: auto;
@@ -79,8 +77,19 @@
 }
 
 @media (max-width:950px) {
+  .mat-toolbar {
+    padding: 0;
+  }
    .mat-toolbar a {
-    display: none;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: right;
+    padding-right: 2%;
+    width: 100%;
+  }
+  .mat-toolbar .company-name {
+    margin-right: 2%;
+    padding-left: 0;
   }
   .mat-toolbar button {
     width: 140px;
@@ -94,9 +103,7 @@
     background: #5b6572;
     cursor: pointer;
   }
-  .mat-toolbar img {
-    float: right;
-  }
+
   .mat-icon {
     height:64px;
     width: 35px;
@@ -106,9 +113,19 @@
 @media (max-width:600px) {
   .sidenav {
     width: 75%;
+    top: 56px;
   }
-  .mat-toolbar button, .mat-icon {
+  .mat-list-item {
+    height: 56px!important;
+  }
+  .mat-toolbar img {
+    width: 56px;
+  }
+  .mat-toolbar button, .mat-icon, .mat-toolbar a {
     height: 56px;
+  }
+  .mat-toolbar .company-name {
+    line-height: 60px;
   }
   .mat-nav-list .mat-list-item {
     width : 100%;

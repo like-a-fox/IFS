@@ -1,5 +1,4 @@
-
-<div class="container">
+<div class="flex-grid">
   <mat-card class="supplier-card mat-elevation-z2">
     <mat-card-title class="mat-elevation-z2">
   Our Supplier Partners
@@ -9,8 +8,8 @@
         <span *ngFor="let supplier of suppliers; let right=odd;" [ngClass]="{ 'right': right }" >
             {{ supplier.company }}
             </span>
-        <div class="contact" routerLink="/contact"> Contact Us</div>
   </mat-card-content>
+  <div class="contact" routerLink="/contact"> Contact Us</div>
 </mat-card>
 
 <mat-card class="services-card mat-elevation-z2">
@@ -40,12 +39,6 @@
   </p>
 </mat-card-content>
 </mat-card>
+
 </div>
-
- 
-
-
-  
-
-
-
+<ifs-footer></ifs-footer>

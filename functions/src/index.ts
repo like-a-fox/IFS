@@ -7,28 +7,25 @@
 //  response.send("Hello from Firebase!");
 // });
 // The Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
-const functions = require('firebase-functions');
+import functions = require('firebase-functions');
+import admin = require('firebase-admin');
+import nodemailer = require('nodemailer');
+
 
 // The Firebase Admin SDK to access the Firebase Realtime Database.
-const admin = require('firebase-admin');
-admin.initializeApp();
+admin.initializeApp(functions.config().firebase);
 
-const nodemailer = require('nodemailer');
+
 const gmailEmail = encodeURIComponent(functions.config().gmail.email);
 const gmailPassword = encodeURIComponent(functions.config().gmail.password);
 const mailTransport = nodemailer.createTransport(`smtps://${gmailEmail}:${gmailPassword}@smtp.gmail.com`);
 
-exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onWrite(event => {
-    const snapshot = event.data;
-  // Only send email for new messages.
-    if (snapshot.previous.val() || !snapshot.val().name) {
-      return;
-    }
+exports.sendContactMessage = functions.database.ref('/messages/{pushKey}').onCreate(event => {
     
-    const val = snapshot.val();
+    const val = event.val();
     
     const mailOptions = {
-      to: 'test@example.com',
+      to: 'derek.musser@icloud.com',
       subject: `Information Request from ${val.name}`,
       html: val.html
     };

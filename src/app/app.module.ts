@@ -1,6 +1,7 @@
 //core
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { HashLocationStrategy, LocationStrategy} from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
@@ -71,13 +72,13 @@ const appRoutes: Routes = [
     IfsGalleryComponent
   ],
   imports: [
+    FlexLayoutModule,
     MatInputModule,
     HttpClientModule,
     FormsModule,
     CdkTableModule,
     CdkTreeModule,
     ReactiveFormsModule,
-    NgxMasonryModule,
     MatExpansionModule,
     SlideshowModule,
     BrowserModule,
@@ -94,9 +95,10 @@ const appRoutes: Routes = [
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    GallerizeModule,
+    NgxMasonryModule,
     GalleryModule.forRoot(),
     LightboxModule.forRoot(),
+    GallerizeModule,
     RouterModule.forRoot(appRoutes),
     AngularFireAuthModule,
     AngularFireDatabaseModule,

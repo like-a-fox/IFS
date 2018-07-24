@@ -57,17 +57,20 @@ export class HomeComponent implements OnInit {
     {
       value: 'reliability',
       link: '/the-team',
-      imgSrc: '../../assets/ValueButtons/reliablility.jpeg'
+      imgSrc: '../../assets/ValueButtons/reliablility.jpeg',
+      colSpan:1
     },
     {
       value: 'workmanship',
       link: '/ifs-services',
-      imgSrc: '../../assets/ValueButtons/workmanship.jpeg'
+      imgSrc: '../../assets/ValueButtons/workmanship.jpeg',
+      colSpan:1
     },
     {
       value: 'experience',
       link: '/ifs-gallery',
-      imgSrc: '../../assets/ValueButtons/experience.jpeg'
+      imgSrc: '../../assets/ValueButtons/experience.jpeg',
+      colSpan:1
     }
   ];
   height: string = 'auto';
@@ -75,7 +78,7 @@ export class HomeComponent implements OnInit {
   autoPlayInterval: number = 4000;
   width: string = '100%';
   showArrows: boolean = false;
- 
+  rowheights: string;
   breakpoint: number;
 
   valuecols:number;
@@ -85,30 +88,29 @@ export class HomeComponent implements OnInit {
     
     if(window.innerWidth <= 800) {
       this.breakpoint =2;
+      this.valuecols = 2;
+      this.values[2].colSpan = 2;
+      this.rowheights = '2.3:1';
     } 
     else {
       this.breakpoint = 4;
-    }
-
-    if(window.innerWidth <=600) {
-      this.valuecols = 1;
-    } else {
       this.valuecols = 3;
+      this.values[2].colSpan=1;
+      this.rowheights = '2:1';
     }
-
   }
   
   onResize(event) {
     if(event.target.innerWidth <= 800) {
       this.breakpoint = 2;
+      this.valuecols = 2;
+      this.values[2].colSpan = 2;
+      this.rowheights = '2.3:1';
     }  else {
       this.breakpoint = 4;
-    }
-
-    if(event.target.innerWidth <=600) {
-      this.valuecols = 1;
-    } else {
       this.valuecols = 3;
+      this.values[2].colSpan=1;
+      this.rowheights = '2:1';
     }
   }
 
